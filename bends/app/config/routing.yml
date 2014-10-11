@@ -1,0 +1,10 @@
+bd_user:
+    resource: "@BDUserBundle/Resources/config/routing.yml"
+    prefix:   /
+
+bs_plateform:
+    resource: "@BSPlateformBundle/Resources/config/routing.yml"
+    prefix:   /platform
+
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"

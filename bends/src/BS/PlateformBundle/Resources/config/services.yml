@@ -1,0 +1,7 @@
+parameters:
+    mon_parametre: ma_valeur
+
+services:
+    bs_platform.antispam:
+        class: BS\PlateformBundle\Antispam\BSAntispam
+        arguments: [@mailer, %locale%, 50]
