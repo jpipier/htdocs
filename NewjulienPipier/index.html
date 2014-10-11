@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Julien Pipier | Site en reconstruction</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <link rel="stylesheet" type="text/css" href="js/jquery.fullPage.css" />
+  <link rel="stylesheet" type="text/css" href="js/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="fonte/stylesheet.css" />
+  <script type="text/javascript">
+$(document).ready(function() {
+	$('#fullpage').fullpage({
+		sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE'],
+			css3: true
+		});
+
+	$('#myModal').modal({
+	  show: false
+	})
+});
+
+
+  </script>
+</head>
+<body>
+
+
+<section id="fullpage">
+	<article class="bouton section" id="section0">
+		<div class="blocLiens">
+			<div class="mail" data-toggle="modal" data-target="#myModal"></div>
+		</div>
+	</article>
+</section>
+<div class="coordonnee">
+
+</div>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button><br/>
+      </div>
+        <div class="modal-body">
+          	<img src="contactj.png" alt="contact julien pipier">
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+</body>
+</html>

@@ -1,0 +1,58 @@
+#portfolio{
+	margin: 0;
+	padding: 0;
+}
+.work{
+	display: inline-block;
+	float: left;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	overflow: hidden;
+	position: relative;
+	transition: all 0.6s ease-in-out 0s;
+	width: 23.5%;
+}
+.workTitle {
+    background: #d7e3f1;
+    margin: 0;
+    padding: 20px;
+    position: absolute;
+    top: -90px;
+    transition: all 0.5s ease-in-out 0s;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #3d4258;
+    border-top: 1px solid #fff;
+    height: 71px;
+}
+.work:hover .workTitle{
+	top: 35%;
+}
+.workThumb img{
+	width: 100%;
+    transition: all 0.5s ease-in-out 0s;
+}
+@media (min-width: 768px) {
+	.work{
+		margin-left: 7px;
+	}
+	.work h5{
+		font-size: 10px;
+	}
+}
+
+
+
+
+/*PAGE PROJET*/
+
+
+.descriptionSite{
+	background: #eff6ff;
+	height: 100px;
+}
+.voirSite{
+	background: #a9b3bf;
+	height: 100px;
+	border-bottom: 1px solid #63718c;
+}

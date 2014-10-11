@@ -1,0 +1,348 @@
+/*
+Theme Name: Idom Servie
+Theme URI: http://www.julienpipier.fr
+Description: Idom services
+Version: 1
+Author: Julien	
+Author URI: http://www.julienpipier.fr
+*/
+
+/* ======================================================================================================== */
+/* =================================================  #Header ============================================= */
+/* ======================================================================================================== */
+
+.home .header-main{
+	height: 104px;
+	padding: 0;
+}
+.home #masthead {
+    height: 104px !important;
+}
+
+.page .header-main{
+	height: 45px;
+}
+.page #masthead {
+    height: 45px;
+}
+.header-main h1{
+	margin: 0;
+	padding: 0;
+	position: relative;
+	z-index: 2;
+}
+
+/* ======================================================================================================== */
+/* =================================================  #Menu =============================================== */
+/* ======================================================================================================== */
+.home header nav {
+    height: 100px;
+    position: relative;
+}
+.page header nav {
+    height: 40px;
+    position: relative;
+}
+.menu-top-container {
+    bottom: 0;
+    position: absolute;
+}
+.menu-top-container ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.menu-top-container ul li{
+	list-style: none;
+	display: inline-block;
+	margin-left: 30px;
+	position: relative;
+}
+.menu-top-container ul li:first-child{
+	margin: 0;
+}
+.menu-top-container ul li a{
+	text-transform: uppercase;
+	color: #8e1e7f;
+	font-size: 15px;
+}
+.menu-top-container ul li a:hover{
+	color: #1e84bd;
+	border-bottom: 5px solid #f2684a;
+	text-decoration: none;
+}
+.current-menu-item a, .current-menu-parent a{
+	color: #1e84bd !important;
+	border-bottom: 5px solid #f2684a !important;
+}
+
+.menu-top-container ul ul{
+	display: none;
+}
+.menu-top-container ul li:hover ul {
+	display: block !important;
+}
+
+.sub-menu{
+	position: absolute;
+	z-index: 3;
+	width: 204px;
+	left: -30px;
+	top: 20px;
+	padding-top: 10px !important;
+}
+.sub-menu li{
+	background: rgba(239,100,43,0.8);
+	width: 204px;
+	margin-top: 1px;
+	text-align: center;
+}
+.sub-menu li a{
+	color: #fff !important;
+	text-transform: none !important;
+	font-size: 15px !important;
+}
+.sub-menu li:hover a, .sub-menu li a:hover {
+	border: none !important;
+}
+.menu-top-container ul ul li{
+	margin-left: 0;
+}
+/* ======================================================================================================== */
+/* ===============================================  #Homepage ============================================= */
+/* ======================================================================================================== */
+
+.ContentRevSlider{
+	height: 375px;
+	background: #ef4925;
+	background: url("images/bkg-header.png") no-repeat center #ef4925;
+}
+.RevSliderBkg{
+    background: url("images/bkg-slider.png") no-repeat scroll center center rgba(0, 0, 0, 0);
+    height: 447px;
+    margin: 0 auto;
+    position: relative;
+    width: 1024px;
+    z-index: 1;
+}
+.site-main{
+	background: #d4eaf5;
+}
+.site-main .contentPage, .header-main{
+	float: none;
+	margin: 0 auto;
+}
+.contentPage{
+	min-height: 774px;
+	background: url("images/bkg-home.png") no-repeat center;
+}
+.home .contentPage{
+	padding-top: 185px !important;
+}
+.vignettes{
+	width: 824px;
+	margin: 0 auto;
+}
+.vignette{
+	width: 392px;
+	height: 180px;
+	float: left;
+	margin-bottom: 40px;
+}
+.vignette .bloc{
+	width: 202px;
+	height: 102px;
+	background: #fceee6;
+	float:left;
+	border: 8px solid #dbc1b9;
+	margin-top: 36px;
+	position: relative;
+}
+.imgVignette{
+    background: none repeat scroll 0 0 #CEEFFD;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    float: left;
+    position: relative;
+    z-index: 1;
+}
+.imgVignette img{
+	width: 190px;
+	height: 175px;
+}
+.no-border-right{
+	border-right: none !important;
+}
+.no-border-left{
+	border-left: none !important;
+}
+.titreVignette {
+    display: table-cell;
+    height: 86px;
+    padding-left: 15px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    width: 116px;
+}
+.bloc a{
+	color: #8e1e7f;
+	font-size: 18px;
+	line-height: 20px;
+	width: 193px;
+	height: 86px;
+	display: block;
+}
+.bloc a:hover{
+	text-decoration: none;
+}
+.imgPicto {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.margin-right-40{
+	margin-right: 40px;
+}
+
+/* ======================================================================================================== */
+/* ============================================  #BREADCRUMB  ============================================= */
+/* ======================================================================================================== */
+.breadcrumb{
+	margin: 0 !important;
+	padding: 0 0 0 15px !important;
+	background: none !important; 
+}
+.breadcrumb ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.breadcrumb ul li{
+	list-style: none;
+	display: inline-block;
+}
+.breadcrumb ul li a, .breadcrumb{
+	color: #7a7a7a;
+	font-weight: normal;
+	font-size: 11px;
+	font-family: 'arial';
+}
+.breadcrumb .current{
+	color: #ae3685;
+}
+/* ======================================================================================================== */
+/* ==========================================  #Page intérieure =========================================== */
+/* ======================================================================================================== */
+
+
+
+
+.page .ContentRevSlider{
+	height: 258px;
+}
+.page .contentPage{
+	padding-top: 50px;
+}
+.thumbnailBkg{
+    background: url("images/bkg-thumbnail.png") no-repeat scroll center center rgba(0, 0, 0, 0);
+    height: 307px;
+    margin: 0 auto;
+    position: relative;
+    width: 1025px;
+    z-index: 1;
+    overflow: -moz-hidden-unscrollable;
+}
+
+.thumbnailBkg img {
+    margin-left: -38px;
+    margin-top: 3px;
+}
+
+
+.linkChild ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.linkChild ul li{
+	list-style: none;
+	display: inline-block;
+	height: 31px;
+}
+.linkChild ul li:first-child{
+	background: #55cfd6;
+}
+.linkChild ul li:nth-child(2){
+	background: #99cbbd;
+}
+.linkChild ul li:nth-child(3){
+	background: #b182e1;
+}
+.linkChild ul li a{
+	height: 31px;
+	display: table-cell;
+	vertical-align: middle;
+	color: #000;
+	padding: 0 15px;
+}
+.linkChild ul li a:hover{
+	text-decoration: none;
+}
+/* ======================================================================================================== */
+/* ===============================================  #Footer =============================================== */
+/* ======================================================================================================== */
+
+
+.copyright{
+	background: #837080;
+	height: 40px;
+}
+.menuFooter{
+	background: #5b6374;
+	min-height: 160px;
+}
+
+
+/* ======================================================================================================== */
+/* ===============================================  #General ============================================== */
+/* ======================================================================================================== */
+
+h1{
+	color: #1e84bd;
+	font-weight: normal;
+	font-size: 36px; 
+}
+h2{
+	color: #ef4925;
+	font-weight: normal;
+	font-size: 30px;
+}
+h3{
+	color: #a3c6e3;
+	font-weight: normal;
+	font-size: 26px;
+}
+h4{
+	color: #1e84bd;
+	font-weight: normal;
+	font-size: 18px;
+}
+hr{
+	color: #d1d1d1;
+	margin-bottom: 16px;
+    margin-top: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
