@@ -1,0 +1,45 @@
+<?php
+/**
+ * The template for displaying video content (single page)
+ *
+ * @package Klein
+ *
+ */
+?>
+<?php global $post; ?>
+
+	
+	
+	<div class="content-area">
+		
+		<div id="content" <?php echo post_class(); ?> role="main">
+			<?php while ( have_posts() ) : the_post(); ?>
+			
+				<div class="clearfix">
+					<div class="blog-author entry-content-author">
+						<?php klein_author(); ?>
+					</div>
+					<div class="blog-content">
+							<?php if( has_post_thumbnail() ){ ?>
+								<div class="clearfix center entry-content-thumbnail">
+									<?php the_post_thumbnail( 'full', array( 'class' => 'scale-with-grid' ) ); ?>
+								</div>
+							<?php } ?>
+						<div class="blog-pad entry-content">
+							<?php the_content(); ?>
+						</div>
+						<div class="blog-pad blog-content-meta">
+							<?php klein_entry_meta(); ?>
+						</div>
+						<div class="blog-pad">
+							<?php klein_content_nav( 'nav-below' ); ?>
+						</div>
+					</div>
+					
+					<div class="clear"></div>
+				</div>
+				
+			<?php endwhile; // end of the loop. ?>
+		</div><!-- #content -->
+	
+	</div><!-- #primary -->

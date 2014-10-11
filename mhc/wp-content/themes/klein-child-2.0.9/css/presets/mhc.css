@@ -1,0 +1,41 @@
+/**
+ * TURQUOISE PRESET
+ *
+ * @package Klein
+ * @since 1.0
+ *
+ */
+
+
+#bp-klein-top-bar{
+    background: #191919 !important;
+}
+#header, #footer{
+    background: #000 !important;
+}
+
+
+
+/*
+ * Mobile Navigation
+ * 
+ * Added @version 2.0.7
+ * @package klein
+ * @version 2.0.7
+ * */
+.menu.mobile li a{
+	background: #1ABC9C;
+	
+}
+.menu.mobile .sub-menu li a:hover,
+.menu.mobile li a:hover{
+	background: #1ABC9C;
+}
+.menu.mobile .sub-menu li a,
+.menu.mobile li a .sub-menu-toggle
+{	
+	background: #16A085;
+}
+.menu.mobile li a {
+	border-bottom: 1px solid #16A085;
+}
