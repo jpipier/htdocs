@@ -1,0 +1,117 @@
+/*
+Theme Name: ju&po
+Theme URI: http://www.julienpipier.fr
+Description: jupo
+Version: 0.1
+Author: Julien	
+Author URI: http://www.julienpipier.fr
+*/
+
+header{
+	background: #0b2126;
+	height: 90px;
+}
+nav{
+	padding-top: 40px;
+}
+nav ul li{
+	display: inline-block;
+	list-style: none;
+	margin-left: 55px;
+}
+nav ul li:first-child{
+	margin-left: 0 !important;
+}
+nav ul li a{
+	color: #fff;
+	text-transform: uppercase;
+}
+footer{
+	background: #a0f2ea;
+}
+
+body{
+	background: url('images/background-pattern.gif') repeat;
+}
+#main{
+	background: #fff;
+}
+h1.site-title img{
+	max-height: 56px;
+    max-width: 149px;
+}
+.work{
+	display: inline-block;
+	width: 233px;
+	height: 233px;
+	overflow: hidden;
+	margin-left: 10px;
+	margin-bottom: 10px; 
+	position: relative;
+	transition :all 0.5s ease-in-out 0s;
+	float: left;
+	transition-duration: 0.6s
+}
+.work:hover .workTitle{
+	top: 0;
+}
+.work:hover .workExcerpt{
+	bottom: 0;
+	display: block !important;
+}
+.work img {
+    max-height: 233px;
+    max-width: 233px;
+}
+.workThumb{
+	width: 233px;
+	height: 233px;
+}
+.workTitle {
+    background: #0b2126;
+    position: absolute;
+    top: -50px;
+    width: 233px;
+    padding: 5px;
+    margin: 0;
+	transition :all 0.5s ease-in-out 0s;
+}
+.workTitle a{
+	font-size: 14px;
+	color: #c8fef9;
+	text-transform: uppercase;
+	padding: 5px;
+}
+.workExcerpt{
+    background: rgba(255,255,255,0.86);
+    position: absolute;
+    bottom: -300px;
+    width: 233px;
+    z-index: 9999;
+    left: 0;
+	transition :all 0.5s ease-in-out 0.2s;
+	padding: 5px;
+}
+.workExcerpt a{
+	color: #0b2126;
+	font-size: 18px;
+}
+ul#filter {
+    float: left;
+    font-size: 16px;
+    list-style: none;
+    margin-left: 0;
+    width: 100%;
+}
+ul#filter li {
+    border-right: 1px solid #dedede;
+    float: left;
+    line-height: 16px;
+    margin-right: 10px;
+    padding-right: 10px;
+}
+ul#portfolio {
+    float: left;
+    list-style: none;
+    margin-left: 0;
+}
