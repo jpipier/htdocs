@@ -1,0 +1,65 @@
+<?php
+
+/**
+ *  @file
+ *  Integrating Galleria with Views Slideshow.
+ */
+
+/**
+ *  Implements hook_theme().
+ */
+function views_slideshow_galleria_theme() {
+  return array(
+    'views_slideshow_galleria_main_frame' => array(
+      'variables' => array('vss_id' => NULL, 'view' => NULL, 'settings' => NULL, 'rows' => NULL),
+      'template' => 'views-slideshow-galleria-main-frame',
+      'file' => 'views_slideshow_galleria.theme.inc',
+    ),
+  );
+}
+
+/**
+ *  Implements hook_libraries_info().
+ */
+function views_slideshow_galleria_libraries_info() {
+  $libraries['galleria'] = array(
+    'name' => 'Galleria JQuery Plugin',
+    'vendor url' => 'http://galleria.io/',
+    'download url' => 'http://galleria.io/download/',
+    'path' => 'src',
+    'files' => array(
+      'js' => array(
+        'galleria.js',
+      ),
+    ),
+  );
+}
+
+/**
+ * Gets the path to the Galleria library.
+ *
+ * @return
+ *   The path to the Galleria library js file, or FALSE if not found.
+ */
+function _views_slideshow_galleria_library_path() {
+  $galleria_path = libraries_get_path('galleria');
+
+  if (!empty($galleria_path)) {
+    // Attempt to use minified version of Galleria plugin.
+    if (file_exists($galleria_path . '/galleria.min.js')) {
+      $galleria_path .= '/galleria.min.js';
+    }
+    // Otherwise use non-minified version if available.
+    elseif (file_exists($cycle_path . '/galleria.js')) {
+      $galleria_path .= '/galleria.js';
+    }
+    else {
+      $galleria_path = FALSE;
+    }
+  }
+  else {
+    $galleria_path = FALSE;
+  }
+
+  return $galleria_path;
+}

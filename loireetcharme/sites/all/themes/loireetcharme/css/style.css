@@ -1,0 +1,4222 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/** Clear Floats Without Structural Markup: 
+---------------------------------
+*  http://www.positioniseverything.net/easyclearing.html
+*/
+.clearfix {
+        display: inline-block;
+}
+ 
+.clearfix:after {
+        clear: both;
+        display: block;
+        font-size: 0;
+        content: " ";
+        height: 0;
+        visibility: hidden;
+}
+html{
+	-webkit-transition: all .4s ease-in-out;  
+	-moz-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out; 
+}
+/* Hides from IE-mac \*/
+* html .clearfix {
+        height: 1%;
+}
+div{
+	font-family: 'roboto_condensedregular';
+}
+.clearfix {
+        display: block;
+}
+/* End hide from IE-mac */
+
+body{
+	background: #f1efeb;
+}
+strong{
+	color:#563e35;
+	font-family: 'roboto_condensedbold';
+	font-weight: normal;
+}
+h1{
+	margin-bottom: 0 !important;
+}
+p{
+	/*color:#6a6c6e;*/
+	color: #616162;
+	font-size: 14px;
+	padding: 0 0 10px 0;
+	font-family: 'roboto_condensedregular';
+}
+
+a{
+	color:#706e71;
+	text-decoration:none;
+}
+a:hover{
+	text-decoration:underline;
+}
+img.bg{
+    left: 0;
+    position: absolute;
+    top: 0;
+    background: #c3c4c0;
+}
+
+.page-node-edit #main #content{
+	background-color:#fff;
+	padding:5px;
+	/*width: 800px;*/
+}
+.modal{
+	background: rgba(139,143,139,0.9);
+	transition: all 0.15s linear 0.2s;
+	padding-top:10%;
+}
+/* HEADER */
+header{
+	height: 396px;
+	width: 100%;
+	background: #c3c4c0;
+	position: relative;
+	overflow: hidden;
+}
+.front header{
+	height: 500px;
+}
+.front .bandeau{
+	height: 474px;
+}
+.front .visuel {
+	height: 408px;
+}
+.logoSiteHome {
+	position: absolute;
+	bottom: 44px;
+	left: 50px;
+	z-index: 2;
+}
+.telSite {
+    bottom: 61px;
+    position: absolute;
+    right: 39px;
+    color: #fff;
+    font-family: 'roboto_condensedlight';
+    font-size: 30px;
+    z-index: 2;
+}
+nav{
+	display: none;
+}
+h4{
+	font-family: "arapeyitalic";
+	font-size: 30px;
+	color: #b7a093;
+}
+.cover{
+	height: 90px;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	bottom: 0;
+	background: #f1efeb;
+}
+.bandeau{
+	background: #fff;
+	border: 1px solid #c9c9c9;
+	height: 363px;
+	width: 980px;
+	margin: 0 auto;
+	z-index: 9;
+	margin-top: 26px;
+	position: relative;
+	padding: 17px;
+}
+
+.front .visuel:after{
+	background: url(../images/opacity.png);
+    bottom: 47px;
+    content: "";
+    display: block;
+    height: 97px;
+    position: absolute;
+    width: 942px;
+}
+.visuel {
+    height: 301px;
+    width: 942px;
+}
+.visuel:after{
+	background: url(../images/opacity.png);
+    bottom: 45px;
+    content: "";
+    display: block;
+    height: 127px;
+    position: absolute;
+    width: 942px;
+}
+/* footer */
+#footer-wrapper{
+	height:159px;
+	background-image: url(../images/footer-wrapper.png);
+	background-repeat: repeat-x;
+	overflow: hidden;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	position: absolute;
+	z-index: 20;
+
+}
+
+#footer-wrapper{
+	position: fixed;
+}
+
+
+
+#footer-tel-adresse{
+	position:absolute;
+	margin:120px 10px 0 0;
+	
+	z-index:10;
+	right:0;
+}
+#footer-tel-adresse p.tel{
+	float:right;
+	font-size:28px;
+	font-weight:bold;
+	color:#FFF;
+	padding:3px 0 0 0 ;
+}
+#footer-tel-adresse p.adresse{
+	float:left;
+	font-size:11px;
+	padding:5px 10px 0 0;
+	color:#FFF;
+	text-align:right;
+}
+
+
+#footer-wrapper #logo{
+	position:absolute;
+	z-index:0;
+}
+
+#footer-wrapper #block-menu-menu-mention-credit{
+	position:absolute;
+	z-index:1;
+	margin:140px 0 0 0;
+}
+#footer-wrapper #block-menu-menu-mention-credit ul,
+#footer-wrapper #block-menu-menu-mention-credit ul li{
+	margin:0;
+	padding:0;
+}
+#footer-wrapper #block-menu-menu-mention-credit span{
+	color:#a99e95;
+	font-size:10px;
+	display:block;
+	float:left;
+	padding: 0 0 0 5px;
+}
+#footer-wrapper #block-menu-menu-mention-credit a{
+	color:#a99e95;
+	font-size:10px;
+	text-decoration:none;
+	background-image: url(../images/tiret.gif);
+	background-repeat: no-repeat;
+	background-position: 0 2px;	
+	display:block;
+	float:left;
+	padding: 0 0 2px 5px;
+	margin: 0 0 0 5px
+}
+#footer-wrapper #block-menu-menu-mention-credit li.menu-586 a{
+	background-image: none;	
+}
+
+#footer-wrapper #block-menu-menu-mention-credit a:hover,
+#footer-wrapper #block-menu-menu-mention-credit a.active{
+color:#F5A200;
+}
+
+
+footer{
+	height: 86px;
+	width: 100%;
+	background: #b7b1a8;
+	margin-top: 25px;
+}
+footer #logo{
+	margin-top: 15px;
+	float: left;
+}
+footer .adresse{
+	float: left;
+	margin-top: 35px;
+	padding-right: 10px;
+	text-shadow:1px 1px 1px rgba(0,0,0,0.5);
+	text-transform: uppercase;
+	color: #fff
+}
+.mention{
+	color: #69605b;
+	font-size: 11px;
+	float: right;
+	margin-top: 38px;
+	width: 190px;
+}
+#block-menu-menu-mention-credit {
+    float: right;
+    margin-top: -12px;
+}
+/* Form */
+form input, form textarea{
+	border:1px solid #ddd;
+}
+
+
+#block-menu-menu-mention-credit ul{
+list-style-type:none;
+}
+#block-menu-menu-mention-credit ul li{
+	float:left;
+	display:block;
+	margin-right: 6px;
+}
+
+
+/* menu */
+#block-system-main-menu{
+	margin:0 auto;
+	padding:23px 0 0 0;
+	width:800px;
+	padding-left: 64px;
+}
+#block-system-main-menu ul{
+	list-style-type:none;
+	position:absolute;
+}
+
+#block-system-main-menu ul li{
+	float:left;
+	display:block;
+	/*height: 21px;*/
+	position:relative;
+	padding: 6px 0 6px 0px;
+	margin:0 0 0 0px;
+	border:0;
+/*	background-color:red;*/
+}
+
+
+#block-system-main-menu ul li a{
+	display:block;
+	float:left;
+	color:#59493f;
+	text-decoration:none;
+	font-size:12px;
+	font-style:normal;
+	font-weight:bold;
+	text-transform:uppercase;
+	padding: 0 0 0 10px;
+	white-space:nowrap;
+}
+#block-system-main-menu ul li a:hover{
+	color:#FFF;
+}
+
+#block-system-main-menu ul li.expanded{
+
+}
+#block-system-main-menu ul li.active-trail{
+	color:#FFF;
+}
+
+
+#block-system-main-menu>.content>ul>li.active-trail,
+#block-system-main-menu>.content>ul>li:hover{
+	/*background-color:#ab9f97;*/
+	background-image: url(../images/menu.li.gif);
+	background-repeat: repeat-x;
+	
+	
+}
+#block-system-main-menu ul li:hover a,
+#block-system-main-menu ul li.active-trail a{
+	color:#fff;
+}
+#block-system-main-menu ul li.active-trail ul{
+	display:block;
+	background-color:#524b49;
+}
+#block-system-main-menu ul li.expanded:hover ul{
+	display:block;
+	background-color:#524b49;
+	z-index:2;
+}
+
+
+
+
+#block-system-main-menu ul li.menu-341{
+	width:81px;
+}
+#block-system-main-menu ul li.menu-339{
+	width:161px;
+}
+
+#block-system-main-menu ul li.menu-376{
+	width:83px;
+}
+
+.floatr {  
+	position: absolute;  
+	top: 10px;  
+	z-index: -1;  
+	width: 70px;  
+	height: 27px;  
+	background : rgba(157,144,135,1);  
+	-webkit-transition: all .4s ease-in-out;  
+	-moz-transition: all .4s ease-in-out;  
+	margin:13px 0 0 0;
+}  
+ul.menu li{
+	margin: 0;
+}
+.menu-426{
+	margin-left: 40px !important;
+}
+li.expanded, li.collapsed, li.leaf {
+    margin: 0;
+    padding: 0.2em 0 1em;
+}
+.front .menu-wrapper {
+	clear: both;
+	margin-top: 10px
+}
+.menu-wrapper{
+	clear: both;
+	margin-top: 9px	
+}
+.menu-wrapper .menu li{
+	list-style: none;
+	display: inline-block;
+}
+.menu-wrapper .menu li a{
+	font-family: "roboto_condensedbold";
+	font-size: 14px;
+	color: #b7b1a8;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 14px 15px 6px;
+}
+.menuImage a{
+	padding: 0 !important;
+}
+.front .menu-wrapper .menu li a{
+	padding: 13px 15px 6px;
+}
+.menu-wrapper .menu li a:hover,.menu-wrapper .menu li .active{
+	text-decoration: none;
+	color: #fff;
+	background-color: #898e8b;
+}
+
+.menu-wrapper .menu li .menu {
+    background: url("../images/menu-background.png") repeat-x scroll 0 0 rgba(0, 0, 0, 0);
+    bottom: 47px;
+    display: none;
+    height: 135px;
+    left: 17px;
+    position: absolute;
+    text-align: center;
+    width: 943px;
+    z-index: 4;
+    transition: all 0.2s linear 0s;
+}
+
+
+#content-formdemande-form {
+    clear: unset;
+    clear: none;
+}
+/*facebook*/
+.menu-wrapper .menu li.menu-545,
+.menu-wrapper .menu li.menu-545 a
+{
+	width:30px;
+	
+}
+.menu-wrapper .menu li.menu-545 a{
+	color:transparent;
+	text-indent:-9999px;
+	height:27px; 
+	width:13px;
+}
+.menu-wrapper .menu li.menu-545{
+	background-image: url(../images/menu-fb-off.png);
+	background-repeat: no-repeat;
+	background-position: 5px 0;
+}
+.menu-wrapper .menu li.menu-545:hover{
+	background-image: url(../images/menu-fb-on.png);
+	background-repeat: no-repeat;
+}
+.menu-wrapper .menu li.menu-545 a:hover{
+
+	background-color: transparent !important;
+}
+.menu-545{
+	margin-top: -10px;
+}
+
+/*Sous elements*/
+#block-system-main-menu ul li ul{
+	display:none;
+	position:absolute;
+	margin:22px 0 0 0;
+	background-color:#524b49;
+	z-index:0;
+	border:0;
+	padding:0;
+}
+#block-system-main-menu ul li ul li{
+	border:0;
+	padding:2px 0 0 0;
+	margin:0;
+	display:block;
+	border-bottom:1px solid #5c5452;
+	height:18px;
+}
+#block-system-main-menu ul li ul li a:hover,
+#block-system-main-menu ul li ul li a.active
+{
+	color:#f5a200;
+}
+
+#block-system-main-menu ul li ul li a{
+	color:#fff;
+	font-size:11px;
+	text-transform:none;
+	margin:0;
+	border:0;
+	font-weight:normal;
+}
+#block-system-main-menu ul li ul li a:hover, 
+#block-system-main-menu ul li ul li a.active{
+	/*font-weight:bold;*/
+}
+#block-system-main-menu ul li ul li:hover,
+#block-system-main-menu ul li ul li.active-trail
+{
+background-color:#494240;
+}
+#block-system-main-menu ul li.menu-230,
+#block-system-main-menu ul li.menu-539
+{
+	padding: 6px 5px 0 10px ;
+}
+#block-system-main-menu ul li.menu-230 a,
+#block-system-main-menu ul li.menu-539 a
+{
+	color:transparent;
+	text-indent:-9999px;
+	background-image: url(../images/menu-home-off.png);
+	background-repeat: no-repeat;
+	height:27px; 
+	width:13px;	
+}
+#block-system-main-menu ul li.menu-230 a.active,
+#block-system-main-menu ul li.menu-539 a.active
+{
+	background-image: url(../images/menu-home-on.png);
+}
+
+
+/* tourisme */
+#block-system-main-menu ul li.menu-376,
+#block-system-main-menu ul li.menu-376 ul,
+#block-system-main-menu ul li.menu-376 ul li,
+#block-system-main-menu ul li.menu-376 ul li a{
+	width:85px;
+}
+#block-system-main-menu ul li.menu-376:hover{
+	min-height:100px;
+}
+
+/*Demandes*/
+#block-system-main-menu ul li.menu-373,
+#block-system-main-menu ul li.menu-373 ul,
+#block-system-main-menu ul li.menu-373 ul li,
+#block-system-main-menu ul li.menu-373 ul li a
+{
+	width:180px;
+}
+
+.MacIntel #block-system-main-menu ul li.menu-373,
+.MacIntel #block-system-main-menu ul li.menu-373 ul,
+.MacIntel #block-system-main-menu ul li.menu-373 ul li,
+.MacIntel #block-system-main-menu ul li.menu-373 ul li a,
+.MacPPC #block-system-main-menu ul li.menu-373,
+.MacPPC #block-system-main-menu ul li.menu-373 ul,
+.MacPPC #block-system-main-menu ul li.menu-373 ul li,
+.MacPPC #block-system-main-menu ul li.menu-373 ul li a {
+	width:185px;
+}
+
+#block-system-main-menu ul li.menu-373:hover{
+	min-height:50px;
+}
+
+/*agence*/
+#block-system-main-menu ul li.menu-426,
+#block-system-main-menu ul li.menu-426 ul,
+#block-system-main-menu ul li.menu-426 ul li,
+#block-system-main-menu ul li.menu-426 ul li a
+{
+	width:85px;
+}
+#block-system-main-menu ul li.menu-426:hover{
+	min-height:130px;
+}
+
+/*agence*/
+#block-system-main-menu ul li.menu-416,
+#block-system-main-menu ul li.menu-416 ul,
+#block-system-main-menu ul li.menu-416 ul li,
+#block-system-main-menu ul li.menu-416 ul li a
+{
+	width:160px;
+}
+#block-system-main-menu ul li.menu-416:hover{
+	min-height:130px;
+}
+/*Contact*/
+#block-system-main-menu ul li.menu-457,
+#block-system-main-menu ul li.menu-457 ul,
+#block-system-main-menu ul li.menu-457 ul li,
+#block-system-main-menu ul li.menu-457 ul li a
+{
+	width:130px;
+}
+
+.MacIntel #block-system-main-menu ul li.menu-457,
+.MacIntel #block-system-main-menu ul li.menu-457 ul,
+.MacIntel #block-system-main-menu ul li.menu-457 ul li,
+.MacIntel #block-system-main-menu ul li.menu-457 ul li a,
+.MacPPC #block-system-main-menu ul li.menu-457,
+.MacPPC #block-system-main-menu ul li.menu-457 ul,
+.MacPPC #block-system-main-menu ul li.menu-457 ul li,
+.MacPPC #block-system-main-menu ul li.menu-457 ul li a {
+	width:138px;
+}
+
+
+
+
+/*UK*/
+#block-system-main-menu ul li.menu-544,
+#block-system-main-menu ul li.menu-544 a
+{
+	width:33px;
+	
+}
+
+/* SURCHARGE MAC */
+.MacIntel #block-system-main-menu ul li a,
+.MacPPC #block-system-main-menu ul li a{
+	padding: 3px 0 0 10px;
+
+}
+
+
+
+#content{
+	/*width:980px;*/
+	min-height:300px;
+	margin:0 auto 170px auto;
+	/*border:1px red solid;*/
+
+
+}
+#content.bien{
+	background-image: url(../images/back-bien.gif);
+	background-repeat: repeat-y;
+	background-position: 467px 0 ;	
+}
+
+.node-type-album  #content.bien{
+	background-image: none;
+}
+.node-type-album .container{
+	margin-top: 35px;
+	margin-bottom: 80px;
+}
+.node-type-album footer .container{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.node-type-bien #main{
+	background: url("../images/back-bien.gif") repeat-y scroll 482px center rgba(0, 0, 0, 0);
+}
+
+/*Front*/
+#node-26 .content h1{
+	text-align:center;
+	padding:15px 36px 15px 0;
+}
+#node-26 .content {
+	width:100%;
+	/*border:1px red solid;*/
+}
+
+#node-26  .field-name-field-site-image{
+	background-image: url(../images/frontfdimage.gif);
+	background-repeat: no-repeat;
+	padding:11px 12px 12px 12px;
+	margin: 0 0 0 125px;
+}
+#node-26  .field-name-field-site-image .field-item{
+	position:absolute;
+}
+
+
+/*Node node-article*/
+.node-article{
+	/*background-color:#fff;*/
+	/*padding:0 70px 0 30px;*/
+	padding-left: 65px;
+	margin-left: -21px;
+	margin-top: 13px;
+	margin-bottom: 55px;
+}
+.node-article .content-image{
+	float:left;
+	width:409px;	
+	background-image: url(../images/back-image-article.png);
+	background-repeat: no-repeat;
+	padding:12px 12px 28px 12px;
+	margin-top: 25px;
+}
+.node-article .content{
+	float:left;
+	width:440px;
+	margin-left: 28px;
+	margin-bottom: 60px;
+}
+.node-article .content em{
+	font-family: 'roboto_condensedbold_italic';
+	font-size: 15px;
+	font-weight: normal;
+	font-style: normal;
+}
+ h1{
+	color: #b7a093;
+	font-size:30px;
+	font-weight:normal;
+	padding: 10px 0;
+	font-family: 'arapeyitalic';
+}
+
+.node-article .content p{
+	color:#707070;
+	font-size:14px;
+	line-height: 20px;
+}
+
+#webform-client-form-19 div{
+	border:0;margin:0;padding:0;
+}
+#webform-client-form-19 div.form-item{
+	position:relative 
+
+}
+#webform-client-form-19 label{
+	/*display: none;*/
+	position:absolute; top:0; left:0;
+	color:#6a6c6e;
+	font-size:12px;
+	font-weight:normal;
+	padding: 4px 0 0 9px;
+}
+#webform-client-form-19 label span{
+	color:#6a6c6e;
+}
+#webform-client-form-19 input,
+#webform-client-form-19 textarea{
+	width:266px;
+	border-top:2px solid #c9c9c9;
+	border-left:2px solid #c9c9c9;
+	border-right:1px solid #e7e7e7;
+	border-bottom:1px solid #e7e7e7;
+	padding:1px 0px;
+	margin:0;
+	color:#6a6c6e;
+	font-size:12px;
+	height: 24px;
+}
+#webform-client-form-19 input.error,
+#webform-client-form-19 textarea.error{
+	border: 1px solid red;
+	border-top:2px solid red;
+	border-left:2px solid red;
+	color: red;
+}
+#webform-client-form-19 textarea{
+	height:100px;
+}
+#form-contact-intro-text{
+	font-size: 15px;
+	float:left;
+	width: 100%;
+
+}
+#node-19 #form-contact-intro-text{
+	width:100%;
+}
+
+#form-contact-intro-text p{
+	color:#563e35;
+	font-size: 15px;
+	font-family: 'roboto_condensedbold_italic';
+}
+#form-contact-intro-logo{
+	float:left;
+	width:318px;
+}
+#node-19 #form-contact-intro-logo{
+	width: 218px;
+}
+#webform-component-contact-message label{
+	z-index: 9999;
+}
+
+
+/* eRROR */
+div.error{
+	display: none;
+}
+
+
+/* CONTACT */
+#content-map #map {
+	
+	height:350px;
+}
+#content-map{
+	width:620px;
+	float:left;
+	
+	background-image: url(../images/back-mapcontact.png);
+	background-repeat: no-repeat;
+	padding:16px 16px 28px 16px;
+}
+
+#node-19 .content-contact{
+	float:left;
+	padding:0 0 0 18px;
+}
+
+#webform-client-form-19{
+	border:0;padding:0;margin:0;
+}
+#node-19  #webform-component-vos-coordonnees{
+    background-image: url("../images/back-fieldset-contact.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    display: block;
+    margin: 0 0 4px;
+    min-height: 211px;
+    padding: 16px 16px 35px;
+    width: 308px;
+}
+
+#node-19  #webform-component-vos-coordonnees legend{
+	color:#563e35;
+	font-weight:bold;
+	font-size:13px;
+	position:absolute;
+	padding: 0 0 5px 0;
+	display:block;
+	border: none;
+	font-family: arial;
+	width: 266px;
+}
+#webform-client-form-19 #webform-component-vos-coordonnees--contact-nom-prenom{
+	margin: 30px 0 0 0;
+}
+
+#webform-client-form-19 #webform-component-vos-coordonnees--contact-tel-bureau,
+#webform-client-form-19 #webform-component-vos-coordonnees--contact-email,
+#webform-client-form-19 #webform-component-vos-coordonnees--contact-fax,
+#webform-client-form-19 #webform-component-vos-coordonnees--contact-telephone{
+	margin:8px 0 0 0;
+}
+
+
+ #webform-component-contact-message{
+	display:block;
+	width:308px;
+	background-image: url(../images/back-message-contact.png);
+	background-repeat: no-repeat;
+	padding:16px 16px 28px 16px;
+	background-position: 0 0;	
+	min-height:156px;
+	position:relative;
+}
+
+#webform-component-contact-message .form-textarea-wrapper{
+	padding: 18px 0 0 18px;
+	position:relative;
+}
+
+#webform-client-form-19 #edit-submit{
+	background-image: url(../images/contact-envoyer-off.png);
+	background-repeat: no-repeat;
+	background-color: transparent;
+	border:0;
+	display:block;
+	width:101px;
+	height:34px;
+	color: transparent;
+	cursor:hand;
+	text-indent:-9999px;
+	float:right;
+	margin: 0;
+	margin-bottom: 50px;
+}
+#webform-client-form-19 #edit-submit:hover{
+	background-image: url(../images/contact-envoyer-off.png);
+	opacity: 0.7;
+}
+
+
+
+/* Debut Liste resultat */
+.view-id-recherche{
+	margin:0 auto;
+	width:100%;
+}
+#sticker{
+/*	background:-webkit-repeating-linear-gradient(-45deg,white 1px, white 2px, #e5e3df 1px, #e5e3df 10px);
+	background:-moz-repeating-linear-gradient(-45deg,white 1px, white 2px, #e5e3df 1px, #e5e3df 10px);
+	background-repeat: no-repeat;*/
+	top:0;
+	height:76px;
+	z-index:10px;
+	overflow: hidden;
+	margin: -12px auto 0 -15px;	
+	padding: 0 0 0px 0;
+	width:980px;
+	background: url("../images/fond_hachure.gif");
+
+ }
+
+
+.view-id-recherche .view-content .views-row-even
+{
+	background-image: url(../images/back-views-row-even.png);
+	border-top: 1px solid #bab3a7;
+	border-bottom: 1px solid #bab3a7;
+}
+.view-id-facebookbiens .view-content .views-row-even{
+	border-top: none;
+	background-image: none;
+
+}
+.view-id-facebookbiens .view-content .views-row{
+	border-bottom: 1px solid #bab3a7;
+}
+.view-id-facebookbiens .bien-row-content-footer{
+	padding:0 0 10px 0;
+}
+
+.view-id-recherche .view-content .views-row,
+.view-id-facebookbiens .view-content .views-row
+{
+	padding:10px 0;
+}
+.view-id-recherche .view-content,
+.view-id-facebookbiens .view-content
+{
+	padding:0 16px;
+}
+
+.view-filters{
+	padding:0;
+	margin:0;
+	border:0;
+}
+#header-views-filters {
+	padding: 12px 0 0 40px
+}
+#header-views-filters p{
+	padding: 0;
+	font-family: 'roboto_condenseditalic';
+	color:#494240;
+	font-size:14px;
+}
+
+#views-exposed-form-recherche-page .views-exposed-form .views-exposed-widget .form-submit{
+	 margin-top: 3px;
+}
+#views-exposed-form-recherche-page .views-submit-button input{
+	background:#544741;
+	width:101px;
+	height:34px;
+	color:#fff;
+	border:none;
+	cursor:hand;
+	position: relative;
+	font-family: 'roboto_condensedbold';
+	font-size: 14px;
+	text-transform: uppercase;
+}
+.views-widget div.selector select{
+	 width: 210px;
+	 cursor: pointer;
+}
+
+#edit-field-bien-reference-value {
+    display: inline;
+    float: left;
+    height: 26px;
+    left: 735px;
+    margin-top: -5px;
+    position: absolute;
+    width: 41px;
+    text-align: center;
+}
+.form-item-field-bien-reference-value{
+	position: relative;
+}
+.form-item-field-bien-reference-value:after{
+	position: absolute;
+	display: block;
+	width: 100px;
+	height: 10px;
+	top: 3px;
+	color: #544741;
+	content: "OU indiquez une";
+	z-index: 33;
+	left: 645px;
+	font-size: 13px;
+	font-family: 'roboto_condensedregular';
+
+}
+.views-widget div.selector{
+	 width: 210px;
+}
+.views-widget div.selector span{
+	width: 200px;
+}
+
+.node-type-album #block-system-main{
+	float:left;
+}
+
+.node-type-bien #block-views-slide-block,
+#block-views-slidealbum-block{
+	width:500px;
+	float:left;
+}
+.node-type-bien #page{
+	min-height: 685px;
+}
+.views-exposed-widgets {
+	padding: 0 0 0 40px;
+	margin-top: -7px;
+}
+.views-widget-sort-by,
+#views-exposed-form-recherche-page label
+,.views-widget-sort-order
+{
+	display:none;
+}
+
+#edit-field-bien-reference-value-wrapper {
+	/*margin-left: -17px;*/
+	margin-right: 3px;
+}
+
+#edit-field-bien-reference-value-wrapper .views-widget {
+	display:inline;
+	float: left;
+	margin-top: 6px;
+}
+
+#edit-field-bien-taxo-tid-wrapper label {
+display: none;
+	
+}
+
+#edit-field-bien-taxo-tid-wrapper .views-widget {
+	display:inline;
+	float: left;
+}
+#edit-field-bien-reference-value-wrapper{
+	position: relative;
+}
+#edit-field-bien-reference-value-wrapper label {
+    color: rgb(84, 71, 65);
+    display: block;
+    font-family: "roboto_condensedregular";
+    font-size: 12px;
+    left: 746px;
+    position: absolute;
+    top: 9px;
+    z-index: 3;
+}
+.webkit #edit-field-bien-reference-value-wrapper label {
+	top: 17px;
+}
+#edit-field-bien-taxo-tid-wrapper{
+	margin-left: -4px !important;
+}
+
+#edit-field-bien-taxo-tid-wrapper,
+#edit-field-bien-fourchetteprix-tid-wrapper,
+#edit-field-bien-sort-price
+{
+	margin:3px 0 0 0;
+}
+.views-exposed-form .views-exposed-widget{
+	padding:0;
+}
+#edit-submit-recherche{
+	margin-left: 191px;
+	margin-top: -12px !important;
+}
+#edit-submit-recherche:hover{
+	opacity: 0.7;
+}
+.bien-row-image{
+	float:left;
+	width:268px;
+	background-image: url(../images/back-bien-row-image.png);
+	margin: 0 17px 0 0;
+	background-repeat: no-repeat;
+	padding:9px 10px 16px 10px;
+
+}
+
+.bien-row-content{
+	float:left;
+	width: 630px;
+	padding: 0 10px 0 0;
+}
+/* .bien-row-content-header */
+.bien-row-content-header .bien-row-content-header-ref{
+	float:left;
+}
+
+.view-content h2{
+	float:left;
+	padding:0;
+	margin:0;
+	border:0;
+}
+.view-content h2 span{
+	display:block;
+	padding:0;
+	margin:0;
+	border:0;
+}
+
+.view-content h2 a{
+	color: #563e35;
+	text-decoration: none;
+	font-family: 'roboto_condensedbold';
+	font-size:17px;
+	padding:0;
+	margin:0;
+	border:0;
+	font-weight: normal;
+}
+
+.bien-row-content-header-ref{
+	
+	background-image: url(../images/bien-ref-left.png);
+	background-repeat: no-repeat;
+	padding:0 0 0 7px;
+	margin:5px 5px 0  0;
+}
+.bien-row-content-header-ref .field-content{
+	color:#fff;	
+	background-image: url(../images/bien-ref-right.png);
+	background-repeat: no-repeat;
+	background-position: top right;
+	height:30px;
+	padding: 5px 10px 0 4px;
+	font-size:13px;
+}
+
+.bien-row-content-content .item-list{
+	padding: 8px 0 20px 0;
+}
+.bien-row-content-content .item-list ul{
+	list-style-type:none;
+	margin:0;
+	padding:0 0 10px 0;
+}
+.bien-row-content-content .item-list ul li{
+	float:left;
+	background-image: url(../images/bien-puce.gif);
+	background-repeat: no-repeat;
+	background-position: 0 6px;
+	margin:0;
+	padding:0 30px 0 12px;
+	color:#654832;
+	font-size:14px;
+	font-family: 'roboto_condensedregular'
+}
+
+.bien-row-content-resume{
+	clear:both;
+	color:#6a6c6e;
+	font-size:13px;
+	padding: 4px 0 0 0;
+}
+.bien-row-content-footer{
+	padding:10px 0 0 0;
+}
+.bien-row-content-footer .bien-row-content-footer-prix{
+	color:#593e34;
+	font-size:18px;
+	font-family: 'roboto_condensedbold';
+}
+
+.bien-row-content-footer .bien-row-content-footer-link{
+	float:right;	
+}
+.bien-row-content-footer .bien-row-content-footer-link a{
+	color:#926c60;
+	text-decoration:none;
+	background-image: url(../images/bien-loupe-off.png);
+	background-repeat: no-repeat;
+	padding:2px 0 6px 27px;
+	font-size:12px;
+	font-family: 'roboto_condensedbold';
+	text-transform: uppercase;
+}
+.bien-row-content-footer .bien-row-content-footer-link a:hover{
+	background-image: url(../images/bien-loupe-off.png);
+	color:#5f5755;
+}
+#edit-field-bien-taxo-tid-wrapper ,#edit-field-bien-fourchetteprix-tid-wrapper,#edit-field-bien-sort-price{
+	transition:all 0.5s ease-in-out 0s;
+}
+#bien-bilanenergie-value .field-items {
+    margin-right: 5px;
+    padding-top: 1px;
+}
+.diagnostic {
+    height: 410px;
+    padding-top: 25px;
+}
+.diagnostic span{
+	font-family: 'roboto_condensedbold';
+	font-size: 15px;
+	color: #535353;
+	margin-bottom: 28px; 
+}
+/* fin Liste resultat */
+
+
+/* Debut Galleria surcharge */
+.view-id-slide,
+.view-id-slidealbum{
+	width:482px;
+	background-image: url(../images/back-galleria.png);
+	background-repeat: no-repeat;
+	padding:1px;
+
+}
+.view-id-slide .view-content,
+.view-id-slidealbum .view-content
+{
+	min-height:428px;
+}
+
+.galleria-container{
+	background-color: #fff;	
+}
+.galleria-thumbnails-list{
+	padding: 0 5px; 
+}
+
+/* Fin Galleria surcharge */
+
+
+/* Debut fiche bien */
+.field.field-name-field-bien-reference.field-type-text.field-label-hidden {
+    float: left;
+}
+#header-bien{
+	padding: 10px 0;
+
+}
+#header-bien-retour{
+	float:left;
+	width:500px;
+	padding:5px 0 0 0;
+	margin-right: 12px;
+}
+#header-bien-retour a{
+	text-transform:uppercase;
+	color:#563e35;
+	text-decoration:none;
+	background-image: url(../images/back-button-retourbien.png);
+	background-repeat: no-repeat;
+	padding: 5px 0 5px 20px;
+	font-family: "roboto_condensedbold";
+	font-size: 13px;
+}
+#header-bien-retour a:hover{
+	text-decoration:underline;
+}
+
+#header-bien-retour a.print{
+	display:block;
+	float:right;
+	background-image: url(../images/bien-print-off.png);
+	background-repeat: no-repeat;
+	color:transparent;
+	text-indent:-9999px;
+	margin: 0 28px 0 0;
+	width:30px;
+	height:27px;
+}
+
+#header-bien-prix {
+	background-image: url(../images/bien-price-left.gif);
+	background-repeat: no-repeat;
+	padding: 0 0 0 2px;
+	float:left;
+}
+#header-bien-prix span{
+	display:block;
+	background-image: url(../images/bien-price-right.gif);
+	background-repeat: no-repeat;
+	background-position: top right;
+	padding:8px ;
+	color:#fff;
+	font-weight:bold;
+	font-size:17px;
+	margin-bottom: 20px;
+}
+#header-node-bien #bien-reference{
+	float:left;
+}
+#header-node-bien h1{
+	float:left;
+	margin: 0;
+	padding: 0 0 0 5px;
+}
+#header-node-bien #bien-reference{ 
+	background-image: url(../images/bien-ref-left.png);
+	background-repeat: no-repeat;
+	padding: 0 0 0 7px;
+	margin:2px 0 0 0;
+}
+#header-node-bien #bien-reference span, .field-name-field-bien-reference{
+	background-image: url(../images/bien-ref-right.png);
+	background-repeat: no-repeat;
+	background-position: top right;
+	padding:4px 8px 8px 1px ;
+	color:#fff;
+	font-weight:normal;
+	font-size:15px;
+	float:left;
+	display:block;
+	/*font-family: 'ArimoRegular';*/
+}
+#header-node-bien #bien-reference span div.field-name-field-bien-reference{
+	float:right;
+}
+
+#header-node-bien #bien-reference span *{
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+#header-node-bien{
+	padding: 0 0 10px 0;
+}
+
+/* boutons */
+#bien-logolc {
+	float:left;
+}
+#bien-buttons{
+	float:left;
+	text-align:right;
+	width:257px;
+	margin-bottom: 50px;
+}
+#bien-buttons a{
+	color:transparent;
+	text-indent:-9999px;
+	display:block;
+	background-repeat: no-repeat;
+	height:35px;
+	float:right;
+}
+
+.demandeinfo, .sendtofriend, .sharefb{
+	width: 168px;
+	position: relative;
+	height: 34px;
+	margin-bottom: 10px;
+}
+.demandeinfo{
+	background-color: #a57368;
+}
+.sendtofriend{
+	background-color: #967e78;
+}
+.sharefb{
+	background: #9e9e9e;
+	width: 104px;
+}
+#bien-buttons a.demandeinfo:before, #bien-buttons a.sendtofriend:before, #bien-buttons .sharefb:before{
+	position: absolute;
+	display: block;
+	width: 100px;
+	height: 34px;
+	top: 7px;
+	color: #fff;
+	z-index: 33;
+	left: 40px;
+	font-size: 14px;
+	font-family: 'roboto_condensedregular';
+	color: #fff;
+}
+#bien-buttons a.demandeinfo:after, #bien-buttons .sendtofriend:after, #bien-buttons .sharefb:after{
+	content: "\e072";
+	position: absolute;
+	display: block;
+	width: 100px;
+	height: 34px;
+	top: 12px;
+	color: #544741;
+	z-index: 33;
+	right: 12px;
+	font-size: 8px;
+	font-family: 'Glyphicons Halflings';
+	color: #fff;
+}
+#bien-buttons a.demandeinfo:before{
+	content: "Demande d'information ";
+}
+#bien-buttons .sendtofriend:before{
+	content: url(../images/enveloppe.png);
+}
+#bien-buttons .sharefb:before{
+	content: url(../images/fbBien.png);
+	left: -25px;
+}
+#bien-buttons a.demandeinfo:hover, #bien-buttons a.sendtofriend:hover, #bien-buttons a.sharefb:hover{
+	opacity: 0.7;
+}
+#bien-bilanenergie-header{
+	margin-top:8px;
+}
+
+#bien-bilanenergie{
+	height:260px;
+}
+#bien-bilanenergie-image{
+	position: relative;
+	margin-top: 28px;
+}
+#bien-bilanenergie-value{
+	position: absolute;
+	z-index: -1;
+	text-align:right;
+	width:263px;
+	color:#fff;
+}
+#bien-bilanenergie-value .field-name-field-bien-bilanenergie{
+	background-image: url(../images/bien-bilan-fleche.png);
+	height:22px;
+}
+#bien-bilanenergie-value .field-name-field-bien-bilanenergie .field-item{
+	padding: 1px 5px 0 0;
+	font-size:16px;
+}
+#bien-bilanenergie-value.bilan-a {
+	top:21px;
+}
+#bien-bilanenergie-value.bilan-b {
+	top:51px;
+}
+#bien-bilanenergie-value.bilan-c {
+	top:82px;
+}
+#bien-bilanenergie-value.bilan-d {
+	top:113px;
+}
+#bien-bilanenergie-value.bilan-e {
+	top:144px;
+}
+#bien-bilanenergie-value.bilan-f {
+	top:174px;
+}
+#bien-bilanenergie-value.bilan-g {
+	top:205px;
+}
+.contentBien{
+    margin-left: 0;
+    padding-left: 35px;
+    margin-bottom: 40px;
+}
+.desc p{
+	font-family: 'roboto_condensedbold';
+	font-size: 15px;
+	line-height: 18px;
+	color: #563e35;
+}
+/* Fin fiche bien */
+
+
+/* debut form demande */
+#content-formdemande-form *{
+	padding:0;
+	margin:0;
+	border:0;
+}
+
+#content-formdemande-form legend{
+	position:absolute;
+	padding:10px 10px 10px 19px;
+	color:#563e35;
+	font-weight:bold;
+	font-size:12px;
+	width: 307px;
+}
+
+#content-formdemande-visuel{
+	float:left;
+	width:316px;
+	height:397px;
+	background-image: url(../images/back-content-formdemande-visuel.png);
+	background-repeat: no-repeat;
+}
+#content-formdemande-visuel span{
+	display:block;
+	padding:16px 0 0 16px;
+}
+
+#content-formdemande-form{
+	float:left;
+	width:630px;
+}
+#webform-client-form-5 input,
+#webform-client-form-5 textarea,
+#webform-client-form-25 fieldset input,
+#webform-component-acquereur-commentaires textarea
+{
+	width:266px;
+	border-top:2px solid #c9c9c9;
+	border-left:2px solid #c9c9c9;
+	border-right:1px solid #e7e7e7;
+	border-bottom:1px solid #e7e7e7;
+	padding:3px 2px;
+	margin:0;
+	color:#6a6c6e;
+	font-size:12px;
+}
+#webform-client-form-5 input.error,
+#webform-client-form-5 textarea.error,
+#webform-client-form-25 fieldset input.error,
+#webform-component-acquereur-commentaires textarea.error
+{
+	border-top:2px solid red;
+	border-left:2px solid red;
+	border-right:1px solid red;
+	border-bottom:1px solid red;
+	color:red;
+}
+
+
+#webform-client-form-5 textarea,
+#webform-component-acquereur-commentaires textarea{
+	width:590px;
+	height:104px;
+	resize: none;
+}
+
+#webform-client-form-5 input:focus,
+#webform-client-form-5 textarea:focus,
+#webform-client-form-25 fieldset input:focus,
+#webform-client-form-25 fieldset textarea:focus
+{
+	background-color:#e8e8e8;
+}
+#webform-client-form-5 label{
+	/*display:none;*/
+	position:absolute; top:0; left:0;
+	color:#6a6c6e;
+	font-size:12px;
+	font-weight:normal;
+	padding: 4px 0 0 4px;
+}
+#webform-client-form-5 label span{
+	color:#6a6c6e;
+}
+#webform-client-form-5 .form-item {
+	position:relative;
+}
+#webform-client-form-5 #webform-component-vos-coordonnees{
+	display:block;
+	float:left;
+	width:321px;
+	background-image: url(../images/back-webform-demande-fieldset.png);
+	background-repeat: no-repeat;
+}
+
+#webform-client-form-5 #webform-component-bien-a-vendre-ou-a-estimer{
+	background-image: url(../images/back-webform-demande-fieldset.png);
+	background-repeat: no-repeat;
+}
+#webform-client-form-5 #webform-component-vos-coordonnees .fieldset-wrapper,
+#webform-client-form-5 #webform-component-bien-a-vendre-ou-a-estimer .fieldset-wrapper
+{
+	padding:47px 0 25px 19px;
+}
+#webform-client-form-5 #webform-component-vos-coordonnees .fieldset-wrapper .form-item,
+#webform-client-form-5 #webform-component-bien-a-vendre-ou-a-estimer .fieldset-wrapper .form-item
+{
+	padding:0 0 7px 0;
+}
+
+#webform-client-form-5 #webform-component-commentaires{
+	background-image: url(../images/back-webform-demande-commentaires.png);
+	background-repeat: no-repeat;	
+	min-height:164px;
+	padding:16px 0 0 16px;
+}
+#webform-client-form-5 #edit-actions #edit-submit,
+#webform-client-form-25 #edit-actions #edit-submit,
+#webform-client-form-25 #edit-actions--2 #edit-submit--2,
+#webform-client-form-19 #edit-actions--3 #edit-submit--3{
+	display:block;
+	float:right;
+	margin: 0 3px 0 0;
+	background-image: url(../images/contact-envoyer-off.png);
+	background-repeat: no-repeat;
+	background-color: transparent;
+	border:0;
+	width:101px;
+	height:34px;
+	color: transparent;
+	cursor:hand;
+	text-indent:-9999px;
+	margin: 0 0 50px 0;
+
+}
+
+#fb-form-vendeur-form #webform-client-form-5 #edit-actions #edit-submit {
+/*
+border: 1px solid red;
+*/
+margin-right: 5px;
+margin-top: -10px;
+}
+
+#fb-form-vendeur-form #form-obligatoire {
+margin-top: -12px;
+}
+
+#webform-client-form-5 #edit-actions #edit-submit:hover,
+#webform-client-form-25 #edit-actions #edit-submit:hover,
+#webform-client-form-25 #edit-actions--2 #edit-submit--2:hover,
+#webform-client-form-19 #edit-actions--3 #edit-submit--3:hover
+{
+	opacity: 0.7;
+}
+#webform-client-form-25 fieldset label,
+#webform-client-form-25 #webform-component-acquereur-commentaires label{
+	/* display:none; */
+	position:absolute; top:0; left:0;
+	color:#6a6c6e;
+	font-size:12px;
+	font-weight:normal;
+	padding: 4px 0 0 4px;
+}
+#webform-client-form-25 fieldset .form-item,
+#webform-client-form-25 #webform-component-acquereur-commentaires .form-item{
+	position:relative;
+}
+
+#webform-client-form-25 fieldset label span,
+#webform-client-form-25 #webform-component-acquereur-commentaires label span{
+	color:#6a6c6e;
+}
+#webform-client-form-25 input{}
+
+
+#webform-component-acquereur-vos-coordonnees--acquereur-nom,
+#webform-component-acquereur-vos-coordonnees--acquereur-telephone,
+#webform-component-acquereur-vos-coordonnees--acquereur-tel-bureau,
+#webform-component-acquereur-vos-coordonnees--acquereur-email,
+#webform-component-acquereur-vos-coordonnees--acquereur-fax{
+	clear:left;
+	float:left;
+	width:312px;
+	padding: 0 0 7px 0;
+}
+#webform-component-acquereur-vos-coordonnees--acquereur-prenom,
+#webform-component-acquereur-vos-coordonnees--acquereur-adresse,
+#webform-component-acquereur-vos-coordonnees--acquereur-code-postal,
+#webform-component-acquereur-vos-coordonnees--acquereur-ville,
+#webform-component-acquereur-vos-coordonnees--acquereur-pays{
+	float:left;
+}
+
+#webform-client-form-25 #webform-component-acquereur-vos-coordonnees{
+	background-image: url(../images/back-acquereur-vos-coordonnees.png);
+	background-repeat: no-repeat;
+	width:629px;
+	height:234px;
+	
+}
+#webform-client-form-25 #webform-component-acquereur-vos-coordonnees .fieldset-wrapper{
+	padding: 47px 0 0 19px;
+}
+
+#webform-component-acquereur-situation{
+	width:145px;
+	float:left;
+}
+#webform-component-acquereur-architecture{
+	width:160px;
+	float:left;
+}
+#webform-component-acquereur-etat-des-batiments{
+	width:150px;
+	float:left;
+}
+#webform-component-acquereur-surface-hab{
+	width:130px;
+	float:left;
+}
+
+#webform-component-acquereur-situation .form-item label,
+#webform-component-acquereur-architecture .form-item label,
+#webform-component-acquereur-etat-des-batiments .form-item label{
+	font-size:14px;
+	color:#6a6c6e;
+	font-weight:normal;
+}
+#webform-component-acquereur-situation label,
+#webform-component-acquereur-architecture label,
+#webform-component-acquereur-etat-des-batiments label,
+#webform-component-acquereur-surface-hab label,
+#webform-component-acquereur-surface-du-terrain label,
+#webform-component-acquereur-budget-ideal label,
+#webform-component-acquereur-budget-maxi label,
+#webform-component-acquereur-budget-maxi .field-suffix,
+#webform-component-acquereur-budget-ideal  .field-suffix
+{
+	font-size:13px;
+	color:#563e35;
+	font-weight:bold;
+}
+
+#webform-component-acquereur-surface-hab .description,
+#webform-component-acquereur-surface-du-terrain .description,
+#page-wrapper .content #form-obligatoire p
+{
+	color:#6a6c6e;
+	font-size:10px;
+	font-style:italic;
+	font-weight:normal;
+	font-family: arial;
+}
+#form-obligatoire{
+	float:left;
+}
+
+
+#webform-component-acquereur-surface-hab input,
+#webform-component-acquereur-surface-du-terrain input,
+#webform-component-acquereur-budget-ideal input,
+#webform-component-acquereur-budget-maxi input
+{
+	width:62px;
+	border-top:2px solid #c9c9c9;
+	border-left:2px solid #c9c9c9;
+	border-right:1px solid #e7e7e7;
+	border-bottom:1px solid #e7e7e7;
+	padding:3px 2px;
+	margin:0;
+	color:#6a6c6e;
+	font-size:12px;
+}
+
+
+
+#webform-component-acquereur-budget-ideal{
+	clear:left;
+	float:left;
+	background-color:#dad6d1;
+	padding:5px 25px 5px 10px;
+	margin:-31px 0 15px 19px;
+
+}
+#webform-component-acquereur-budget-maxi{
+	float:left;
+	background-color:#dad6d1;
+	padding:5px 25px 5px 10px;
+	margin-top:-31px;
+}
+#webform-component-acquereur-surface-du-terrain{
+	/*position: absolute;*/
+	width:130px;
+	float:left;
+	padding: 20px 0 0 0px;
+	/*border: 1px solid red;*/
+	
+}
+
+#fb-form-aquereur #webform-component-acquereur-surface-du-terrain{
+	position: absolute;
+	width:160px;
+	/*float:left;*/
+	padding: 20px 0 0 0px;
+	top: 610px;
+	left: 505px;
+}
+
+
+#webform-component-acquereur-commentaires{
+	clear:left;
+	background-image: url(../images/back-webform-demande-commentaires.png);
+	background-repeat: no-repeat;
+	padding:16px 0 0 19px;
+	min-height:158px;
+}
+
+/*.clientside-error{display:none;}*/
+#clientsidevalidation-webform-client-form-25-errors{
+	display:none;
+}
+#clientsidevalidation-webform-client-form-19-errors{
+	display:none;
+	position:absolute;
+	width:1px;
+	height:1px;
+	/*top:-9999px;
+	right:-9999px;*/
+}
+/* fin form demande */
+
+
+/* personnalisation bouton radio form */
+
+.form-type-radio input[type="checkbox"]:checked,
+.form-type-radio input[type="checkbox"]:not(:checked),
+.form-type-radio input[type="radio"]:checked,
+.form-type-radio input[type="radio"]:not(:checked) {
+	width: 1px;
+	height: 1px;
+	margin: 0;
+	padding: 0;
+	opacity: 0;
+	position: absolute;
+	clip: rect(0 0 0 0);
+	clip: rect(0,0,0,0);
+	-webkit-appearance:	none;
+	-moz-appearance:	none;
+	-o-appearance:		none;
+	appearance:		none;
+}
+
+
+.form-type-radio {
+	position: relative;
+	height: 16px;
+}
+
+.form-type-radio label{
+	cursor: pointer;
+	position: relative;
+	width: 120px;
+	padding-left: 20px !important;
+}
+
+.form-type-radio label:before {
+	cursor: pointer;
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	top: 0;
+	border-radius: 4px;
+	
+	content: "";
+	display: block;
+
+	-webkit-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+	-moz-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+	box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+	background: #fcfff4;
+
+	background: -webkit-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	background: -moz-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	background: -o-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	background: -ms-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 );
+}
+
+.form-type-radio input[type="radio"]+label:after {
+    content: "";
+    height: 6px;
+    left: 3px;
+    margin-top: -4px;
+    position: absolute;
+    top: 50%;
+    transform: scale(0);
+    width: 6px;
+	background-color: rgb(86, 62, 53);
+	-webkit-border-radius:	.6rem;
+	-webkit-border-radius:	50%;
+	-moz-border-radius:	50%;
+	-o-border-radius:	50%;
+	border-radius:		50%;
+	-webkit-box-shadow:	inset 0 .1rem .2rem rgba(255,255,255,.6), inset 0 -.1rem .1rem 0 rgba(0,0,0,.5), 0 0 .3rem #000;
+	-moz-box-shadow:	inset 0 .1rem .2rem rgba(255,255,255,.6), inset 0 -.1rem .1rem 0 rgba(0,0,0,.5), 0 0 .3rem #000;
+	-o-box-shadow:		inset 0 1px 2px rgba(255,255,255,.6), inset 0 -1px 1px 0 rgba(0,0,0,.5), 0 0 3px #000;
+	-o-box-shadow:		inset 0 .1rem .2rem rgba(255,255,255,.6), inset 0 -.1rem .1rem 0 rgba(0,0,0,.5), 0 0 .3rem #000;
+	box-shadow:		inset 0 1px 2px rgba(255,255,255,.6), inset 0 -1px 1px 0 rgba(0,0,0,.5), 0 0 3px #000;
+	box-shadow:		inset 0 .1rem .2rem rgba(255,255,255,.6), inset 0 -.1rem .1rem 0 rgba(0,0,0,.5), 0 0 .3rem #000;
+	-webkit-transform:	scale(0);
+	-moz-transform:		scale(0);
+	-o-transform:		scale(0);
+	transform:		scale(0);
+}
+
+.form-type-radio input[type="radio"]:checked+label:hover:after {
+	-webkit-transform:	scale(1.3);
+	-moz-transform:		scale(1.3);
+	-o-transform:		scale(1.3);
+	transform:		scale(1.3);
+}
+
+.form-type-radio input[type=radio]:checked + label:after {
+	-webkit-transform:	scale(1);
+	-moz-transform:		scale(1);
+	-o-transform:		scale(1);
+	transform:		scale(1);
+}
+
+/*fin perso */
+
+
+/* forward*/
+#content #forward-visuel{
+	float:left;
+	width:316px;
+	height:397px;
+	background-image: url(../images/back-content-formdemande-visuel.png);
+	background-repeat: no-repeat;	
+}
+#content #forward-visuel span{
+	display:block;
+	padding:16px 0 0 16px;
+
+}
+
+.page-forward  #content .region-content{
+	float:left;
+}
+
+.page-forward  #content .region-content textarea{
+	width:288px;
+	border-top:2px solid #c9c9c9;
+	border-left:2px solid #c9c9c9;
+	border-right:1px solid #e7e7e7;
+	border-bottom:1px solid #e7e7e7;
+	padding:3px 2px;
+	margin:0;
+	color:#6a6c6e;
+	font-size:12px;
+	height:120px;
+}
+
+.page-forward  #content .region-content .grippie{
+	display:none;
+}
+
+.page-forward .region {
+	border:0;
+	margin:0;
+	padding:0;
+
+}
+.page-forward #block-system-main .content{
+	background-image: url(../images/back-forward.png);
+	background-repeat: no-repeat;	
+	width:285px;
+	padding:20px 20px 0 20px;
+	min-height:460px;
+}
+.page-forward #block-system-main .content input{
+	width:280px;
+	border-top:2px solid #c9c9c9;
+	border-left:2px solid #c9c9c9;
+	border-right:1px solid #e7e7e7;
+	border-bottom:1px solid #e7e7e7;
+	padding:3px 2px;
+	margin:0;
+	color:#6a6c6e;
+	font-size:12px;
+}
+.page-forward  #content .region-content textarea.error,
+.page-forward #block-system-main .content input.error{
+	border-top:2px solid red;
+	border-left:2px solid red;
+	border-right:1px solid red;
+	border-bottom:1px solid red;
+}
+
+.page-forward #block-system-main .content label{
+	font-size:12px;
+	color:#6a6c6e;
+	padding: 3px 0 0 3px;
+	font-weight:normal;
+}
+.page-forward #block-system-main .content label span{
+	color:#6a6c6e;
+	font-weight:normal;
+}
+.page-forward #block-system-main .content .description{
+	font-size:11px;
+	font-style:italic;
+	color:#6a6c6e;
+}
+.page-forward #block-system-main .content #edit-page label,
+.page-forward #block-system-main .content #edit-subject label,
+.page-forward #block-system-main .content #edit-body label
+{
+	color:#563e35;
+	font-size:13px;
+	font-weight:bold;
+}
+
+.page-forward #block-system-main .content #edit-page a,
+.page-forward #block-system-main .content #edit-subject ,
+.page-forward #block-system-main .content #edit-body 
+{
+	color:#6a6c6e;
+	font-size:13px;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+.page-forward #block-system-main .content #edit-submit{
+	background-image: url(../images/contact-envoyer-off.png);
+	background-repeat: no-repeat;
+	background-color: transparent;
+	border:0;
+	display:block;
+	width:92px;
+	height:30px;
+	color: transparent;
+	cursor:hand;
+	text-indent:-9999px;
+	float:right;
+	margin: 0 27px 0 0;
+}
+.page-forward #block-system-main .content #edit-submit:hover{
+	background-image: url(../images/contact-envoyer-on.png);
+}
+
+
+.page-user #main #content .section{
+	background-color: #FFF;
+	padding:10px;
+}
+.page-user #main #content .section #edit-submit{
+	background-color: #5f5755;
+	color:#fff;
+	padding:2px 5px;
+	border:none;
+}
+.page-user #main #content .section #edit-submit:hover{
+	background-color: #a0938b;
+}
+
+/* DEBUT FACEBOOK PAGE */
+.node-type-facebook{
+	/*background-image: url(../images/fb-back-body.png);*/
+	/*background-repeat: no-repeat;	*/
+	background: transparent;
+
+}
+#fb-conteneur{
+	width:780px;
+	background-image: url(../images/fond_FB_LoireCharme.jpg);
+	background-repeat: no-repeat;
+	height: 780px;
+	margin-top: 14px;
+	margin-left: 5px;
+	/*overflow-x : hidden;*/
+	/*border: 1px solid red;*/
+}
+.fb-fond-image  {
+	background-image: url(../images/frontfdimage.gif);
+	background-repeat: no-repeat;
+	padding:11px 12px 12px 12px;
+	margin: 0 0 0 -20px;
+	width: 722px;
+}
+
+.fb-shadow-right {
+	position: absolute;
+	width: 8px;
+	height: 273px;
+	top: 25px;
+	margin-left: 701px;
+	background-color: rgba(75,68,65, 0.14);
+}
+.fb-shadow-below {
+	position: absolute;
+	width: 717px;
+	height: 6px;
+	top: 298px;
+	margin-left:-8px;
+	background-color: rgba(75,68,65, 0.14);
+}
+
+
+#fb-menu ul{
+	list-style-type:none;
+	position: absolute;
+}
+#fb-menu ul,
+#fb-menu ul li{
+	padding:0;
+	margin:0;
+	
+}
+#fb-menu {
+	height:50px;
+	/*padding:0 0 20px 14px;*/
+	padding-top:78px;
+	margin-left: 237px;
+	margin-bottom: 00px;
+}
+#fb-menu ul li {
+	display:block;
+	float:left;
+	position: relative;
+}
+#fb-menu ul li a{
+	display:block;
+	height: 14px;
+	padding:2px;
+	text-decoration:none;
+	font-size:11px;
+	text-transform:uppercase;
+	color:#d1c6ba;
+	font-family: Arial, Sans-serif;
+	font-weight:bold;
+}
+#fb-menu ul li ul{
+	display:none;
+}
+#fb-menu ul li:hover ul{
+	display:block;
+	z-index:100;
+}
+#fb-menu ul li ul li{
+	display:none;
+	float:none;
+}
+	
+#fb-menu #mlagence,
+#fb-menu #mnosbiens
+{
+	padding:7px 14px 7px 14px;
+	/*padding-left: 10px;
+	padding-right: 10px;*/
+}
+
+#fb-menu #mdemandes{
+	padding:7px 16px 7px 15px;
+}
+
+#fb-menu ul li:hover ul,
+#fb-menu ul li:hover ul li,
+#fb-menu ul li:hover ul li a{
+	width:155px;	
+}
+
+
+#fb-menu ul li ul li a{
+	padding: 5px 8px;
+	font-weight:normal;
+}
+
+
+#fb-menu ul li a{
+	display:block;
+	background-repeat: no-repeat;
+	background-color:#5f5755;
+}
+#fb-menu ul li a:hover,
+#fb-menu ul li a.active{
+	background-color:#a59991;
+	color:#fff;
+}
+#fb-menu ul li:hover ul li{
+	display:block;
+	background-color:#ddd;;
+}
+
+#fb-menu ul #mcontact {
+	background-image: url(../images/fb-menu-contact-off.png);
+	display:block;
+	color: transparent;
+	text-indent:-9999px;
+	width:42px;
+	background-color:transparent;
+	margin: 0 0 0 4px;
+	height:27px;
+	
+}
+#fb-menu ul #mcontact:hover,
+#fb-menu ul #mcontact.active{
+	background-image: url(../images/fb-menu-contact-on.png);
+}
+
+#fb-menu ul #msiteweb {
+	background-image: url(../images/fb-menu-site-off.png);
+	display:block;
+	color: transparent;
+	text-indent:-9999px;
+	width:27px;
+	background-color:transparent;
+	height:27px;
+	
+}
+#fb-menu ul #msiteweb:hover{
+	background-image: url(../images/fb-menu-site-on.png);
+}
+#fb-menu ul #mfacebook {
+	background-image: url(../images/fb-menu-facebook-off.png);
+	display:block;
+	color: transparent;
+	text-indent:-9999px;
+	width:27px;
+	background-color:transparent;
+	height:27px;
+	
+}
+#fb-menu ul #mfacebook:hover{
+	background-image: url(../images/fb-menu-facebook-on.png);
+}
+
+
+
+/* FB caroussel */
+#fb-accueil-caroussel{
+	width:700px;
+	height:385px;
+	padding:14px 0 0 13px;
+	/*background-image: url(../images/fb-back-caroussel.png);*/
+	background-repeat: no-repeat;
+	margin: auto;
+	/*margin-left: 36px;*/
+}
+#fb-accueil-caroussel .field-item{
+	position:absolute;
+}
+
+
+/* FORM VENDEUR */
+
+#fb-accueil{
+	position: absolute;
+	/*width:509px;*/
+	width: 780px;
+	/*background: none;*/
+	
+}
+#fb-accueil-content{
+	padding:0 10px 0 40px;
+	font-size:12px;
+	color:#686768;
+	margin-left: 200px;
+	margin-top: -90px;
+	width:468px;
+	text-align : justify;
+	/*background: transparent;*/
+}
+
+#fb-form-vendeur{
+	/*display:none;*/
+	/*background-color:#FFFFFF;*/
+	/*background-image: url(../images/fond_FB_LoireCharme.jpg);*/
+	position: absolute;
+	width:780px;
+	padding: 0 0 0 12px;
+}
+#fb-form-vendeur #webform-client-form-5 #webform-component-vos-coordonnees {
+	/*width:227px;*/
+	width:257px;
+	margin: auto;
+}
+
+#fb-form-vendeur #webform-component-vos-coordonnees
+{
+	background-image: url("../images/fb-back-vendeur-form.png");
+	min-height:220px;
+}
+#fb-form-vendeur #webform-component-bien-a-vendre-ou-a-estimer{
+	background-image: url("../images/fb-back-vendeur-form.png");
+	min-height:220px;
+}
+
+#fb-form-vendeur #webform-component-vos-coordonnees *,
+#fb-form-vendeur #webform-component-bien-a-vendre-ou-a-estimer *{
+	padding:0;
+	margin:0;
+}
+#fb-form-vendeur #webform-component-vos-coordonnees legend,
+#fb-form-vendeur #webform-component-bien-a-vendre-ou-a-estimer legend{
+	position:absolute;
+	color:#563e35;
+	font-weight: bold;
+	padding: 0 0 0 5px;
+	font-size:12px;
+
+}
+#fb-form-vendeur #webform-component-vos-coordonnees .form-item,
+#fb-form-vendeur #webform-component-bien-a-vendre-ou-a-estimer .form-item
+{
+	padding: 5px 0 5px 0;
+	margin: 0 0 5px 0;
+}
+#fb-form-vendeur #webform-component-vos-coordonnees .fieldset-wrapper,
+#fb-form-vendeur #webform-component-bien-a-vendre-ou-a-estimer .fieldset-wrapper{
+padding: 30px 0 5px 5px;
+}
+#fb-form-vendeur #webform-component-vos-coordonnees input,
+#fb-form-vendeur #webform-component-bien-a-vendre-ou-a-estimer input
+{
+	width:194px;
+	padding:2px;
+}
+
+#fb-form-vendeur .edit-submit {
+	margin-right: 5px;
+	border: 1px solid red;
+}
+#fb-form-vendeur #webform-component-vos-coordonnees label,
+#fb-form-vendeur #webform-component-bien-a-vendre-ou-a-estimer label
+{
+	padding:3px;
+}
+#fb-form-vendeur #webform-client-form-5 #webform-component-commentaires {
+	background-image: url("../images/fb-back-vendeurcomm-form.png");
+	position:relative;
+}
+
+#fb-form-vendeur #webform-client-form-5 textarea{
+	width:470px;
+	resize: none;
+}
+
+/******************************************************************************************/
+/******************************************************************************************/
+#fb-form-aquereur{
+	padding:0 0 0 12px;
+}
+#fb-form-aquereur #webform-client-form-25 #webform-component-acquereur-vos-coordonnees{
+	background-image: url("../images/fb-back-aquereur-form.png");
+	width:500px;
+	min-height:210px;
+	margin:0;
+}
+#fb-form-aquereur #webform-component-acquereur-budget-ideal,
+#fb-form-aquereur #webform-component-acquereur-budget-maxi{
+	margin:20px 0 8px 0;
+}
+#fb-form-aquereur #webform-component-acquereur-budget-ideal{
+	width:215px;
+}
+#fb-form-aquereur #webform-component-acquereur-budget-maxi{
+	width:220px;
+}
+
+#fb-form-aquereur #webform-client-form-25 fieldset input{
+	 width: 214px;
+}
+
+#fb-form-aquereur #form-obligatoire {
+	margin-top: -12px;
+}
+
+#fb-form-aquereur #webform-component-acquereur-commentaires label
+{
+position:absolute; top:0; left:0;
+z-index: 10;
+	color:#6a6c6e;
+	font-size:12px;
+	font-weight:normal;
+	padding: 21px 0 0 25px;
+}
+
+#fb-form-aquereur #webform-component-acquereur-commentaires textarea{
+width: 470px;
+resize: none;
+}
+
+#fb-form-aquereur #webform-component-acquereur-commentaires {
+    background-image: url("../images/fb-back-vendeurcomm-form.png");
+}
+
+
+#fb-form-aquereur #webform-component-acquereur-vos-coordonnees--acquereur-nom, 
+#fb-form-aquereur #webform-component-acquereur-vos-coordonnees--acquereur-telephone, 
+#fb-form-aquereur #webform-component-acquereur-vos-coordonnees--acquereur-tel-bureau, 
+#fb-form-aquereur #webform-component-acquereur-vos-coordonnees--acquereur-email, 
+#fb-form-aquereur #webform-component-acquereur-vos-coordonnees--acquereur-fax {
+
+    width: 240px;
+}
+#fb-form-aquereur #webform-component-acquereur-commentaires,
+#fb-form-aquereur #webform-component-acquereur-commentaires .form-textarea-wrapper{
+	position:relative;
+}
+#fb-form-aquereur #webform-component-acquereur-vos-coordonnees legend{
+	position:absolute;
+	padding: 0 0 0 12px;
+	color: #563E35;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#fb-form-aquereur #webform-component-acquereur-vos-coordonnees .form-item{
+	padding:0 0 10px 0; 
+	margin:0;
+}
+
+#fb-form-aquereur #webform-client-form-25 #webform-component-acquereur-vos-coordonnees .fieldset-wrapper{
+	padding: 30px 0 0 12px;
+}
+
+#fb-form-aquereur #webform-component-acquereur-situation,
+#fb-form-aquereur #webform-component-acquereur-etat-des-batiments{
+	/*width:245px;*/
+	width:342px;
+}
+#fb-form-aquereur #webform-component-acquereur-architecture{
+	width:212px;
+	padding:0;
+	margin:0;
+}
+#fb-form-aquereur #webform-component-acquereur-architecture .form-item,
+#fb-form-aquereur #webform-component-acquereur-situation .form-item,
+#fb-form-aquereur #webform-component-acquereur-etat-des-batiments .form-item,
+#fb-form-aquereur #webform-component-acquereur-surface-hab
+{
+	margin:0;
+}
+
+#fb-form-aquereur #webform-component-acquereur-surface-hab{
+	padding:10px 0 0 5px;
+}
+
+
+#fb-form-aquereur #webform-component-acquereur-etat-des-batiments{
+	padding: 0 0 0 12px;
+}
+
+#fb-form-aquereur #webform-component-acquereur-surface-du-terrain{
+	padding: 0 0 0 5px;
+}
+#fb-form-aquereur #webform-component-acquereur-surface-du-terrain{
+	margin:0;
+}
+#fb-form-aquereur{
+	/*display:none;*/
+	/*position: absolute;*/
+	/*background-color:#FFFFFF;*/
+	/*background-image: url(../images/fond_FB_LoireCharme.jpg);*/
+	width:520px;
+	margin:auto;
+}
+
+#fb-form-aquereur #webform-client-form-25 #edit-submit--2 {
+	margin-right: 88px;
+	margin-top: -12px;
+}
+
+/******************************************************************************************/
+
+/******************************************************************************************/
+/******************************************************************************************/
+#fb-form-contact{
+	padding: 0 0 0 14px;
+}
+#fb-form-contact #webform-client-form-19 #webform-component-vos-coordonnees{
+	background-image: url("../images/fb-back-contact1.png");
+	width:220px;
+	background-repeat: no-repeat;
+	min-height:220px;
+	float:left;
+	padding: 0 0 0 15px;
+}
+#fb-form-contact #webform-client-form-19 #webform-component-vos-coordonnees legend{
+	position:absolute;
+	color:#563e35;
+	font-weight:bold;
+	font-size:12px;
+	padding: 10px 0 0 0;
+
+}
+#fb-form-contact #webform-client-form-19 #webform-component-vos-coordonnees .form-item{
+
+}
+#fb-form-contact #webform-client-form-19 #webform-component-vos-coordonnees .fieldset-wrapper{
+	padding: 10px 0 0 0;
+
+}
+#fb-form-contact #webform-client-form-19 #webform-component-contact-message{
+	background-image: url("../images/fb-back-contact1.png");
+	width:230px;
+	float:left;
+	min-height:220px;
+	margin-left:10px;
+}
+#fb-form-contact #webform-client-form-19 input{
+	width:194px;
+}
+#fb-form-contact #webform-client-form-19 textarea{
+	width:190px;
+	height:184px;
+	resize: none;
+}
+#fb-form-contact-form{
+	position:relative;
+	min-height:340px;
+	width: 520px;
+	/*margin:auto;*/
+	margin-left: 128px;
+}
+
+#fb-form-contact-form #webform-component-vos-coordonnees {
+	margin-right: 30px;
+}
+
+#fb-map-container{
+	background-image: url("../images/fb-back-map.png");
+	background-repeat:no-repeat;
+	padding:10px 0 0 10px;
+	min-height:380px;
+	width:500px;
+	/*margin:auto;*/
+	margin-left: 129px;
+	margin-top: -35px;
+
+}
+#fb-map-container #map{
+	width: 470px;
+	height:346px;
+}
+
+#fb-form-vendeur-form {
+	width: 517px;
+	margin-left:126px;
+
+}
+
+#fb-form-aquereur-form {
+	width: 600px;
+	margin: auto;
+}
+
+#fb-conteneur #fb-form-vendeur-form p,
+#fb-conteneur #fb-form-aquereur-form p,
+#fb-conteneur #fb-form-contact-form p {
+	font-size:12px;
+	font-weight:bold;
+	color:#563e35;
+}
+
+#fb-conteneur #edit-actions--3, #fb-conteneur #edit-actions--2, #fb-conteneur #edit-actions{
+	clear:left;
+}
+
+
+#fb-conteneur #webform-client-form-19 #edit-submit--3, #fb-conteneur #webform-client-form-19 #edit-submit{
+	margin: 0 15px 0 0; 
+}
+.fb-adresse{
+	padding:15px 16px 0 0;
+	margin-left: 193px;
+}
+
+#fb-accueil-content .fb-adresse{
+	padding:15px 16px 0 0;
+	margin-left: 0px;
+} 
+
+#fb-accueil-content .fb-adresse p{
+	padding:15px 16px 0 0;
+	margin-left: 0px;
+	text-align:left;
+} 
+
+.fb-adresse p{
+	text-align:center;
+	color:#686768;
+	font-style:italic;
+	font-weight:bold;
+	font-size:12px;
+}
+#fb-toutesoffres{
+	padding:10px 0 0 50px;
+}
+#fb-toutesoffres p a{
+	margin-top: 10px;
+	display: block;
+	background-image: url("../images/fb-back-allnosbiens-off.png");
+	background-repeat: no-repeat;
+	color:transparent;
+	text-indent:-9999px;
+	min-height:30px;
+}
+#fb-toutesoffres p a:hover{
+	background-image: url("../images/fb-back-allnosbiens-on.png");
+}
+
+#fb-nobiens-header{
+	font-weight:bold;
+	padding:0 20px 10px 20px;
+}
+#fb-nobiens-header p{color:#563e35;}
+
+/******************************************************************************************/
+#fb-loading{
+	
+	position:absolute;
+	width:100%;
+	height:100%;
+	background-color:#ddd;
+	/*opacity:0.5;*/
+	z-index:300;
+}
+
+#fb-form-contact{
+	/*display:none;*/
+	position: absolute;
+	width:780px;
+	/*background-color:#FFFFFF;*/
+	
+}
+
+#fb-form-contact .fb-adresse {
+	margin-left: 0px;
+}
+#fb-nosbiens{
+	/*display:none;*/
+	position: absolute;
+	width:780px;
+	padding-left: 4px;
+	padding-right: 5px;
+	/*background-color:#FFFFFF;*/
+	/*background-image: url(../images/fond_FB_LoireCharme.jpg);*/
+}
+
+#fb-conteneur .bien-row-content{
+	/*width: 182px;*/
+	width: 425px;
+}
+#fb-conteneur .bien-row-image{
+	width: 260px;
+}
+#fb-conteneur .bien-row-content-header-prix{
+	float: right;
+	color: #593d32;
+	font-weight: bold;
+	font-size: 13px;
+	margin: 10px 280px 0 0;
+}
+#fb-conteneur .bien-row-content-header-ref{
+	background-image: url(../images/bien-ref-left.png);
+	background-repeat: no-repeat;
+	padding:0 0 0 7px;
+	margin:5px 5px 0  0;
+}
+
+#fb-conteneur .bien-row-content-header-ref .field-content{
+	/*height:25px;*/
+	color:#fff;	
+	background-image: url(../images/bien-ref-right.png);
+	background-repeat: no-repeat;
+	background-position: top right;
+	height:30px;
+	padding: 5px 10px 0 4px;
+	font-size:13px;
+}
+.fb-fanpage{
+	clear:left;
+	padding:0 0 0 13px;
+	width: 780px;
+}
+.fb-fanpage img{
+	display:block;
+	padding:10px 0 0 0;
+	margin-left: 270px;
+}
+/* FIN FACEBOOK PAGE */
+
+
+.galleria-thumb-nav-right{
+	background-image: url("../images/classic-map.png");
+}
+.galleria-thumb-nav-left{
+	background-image: url("../images/classic-map.png");
+}
+.notouch .galleria-thumb-nav-left:hover,
+.notouch .galleria-thumb-nav-right:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    background-color: transparent;
+}
+
+
+#powered {
+    background: url("../images/powered.png") no-repeat scroll 0 0 transparent;
+    float: right;
+	height: 80px;
+   margin-right: 20px;
+    margin-top: 14px;
+    width: 165px;
+}
+
+a#powered:hover {
+    background: url("../images/powered.png") no-repeat scroll 0px -98px transparent;
+    float: right;
+	height: 80px;
+   margin-right: 20px;
+    margin-top: 14px;
+    width: 165px;
+}
+/*
+a:link {
+    color: #D8CAB9;
+    text-decoration: none;
+}*/
+
+.hide-text {
+    overflow: hidden;
+    text-indent: 103%;
+    white-space: nowrap;
+}
+
+/*
+Jérôme add style 
+4 Avril 2012
+*/
+
+/*
+ * Galleria Classic Theme
+ * Copyright (c) 2010, Aino
+ * Licensed under the MIT license.
+ */
+ 
+.galleria-container {
+    position: relative;
+    overflow: hidden;
+    background: white;
+}
+
+.galleria-container img {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+	max-width: none !important;
+}
+.galleria-stage {
+    position: absolute;
+    top: 10px;
+    bottom: 60px;
+    left: 10px;
+    right: 10px;
+    overflow:hidden;
+}
+.galleria-thumbnails-container {
+    height: 50px;
+    bottom: 0;
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    z-index: 2;
+}
+.galleria-carousel .galleria-thumbnails-list {
+    margin-left: 28px;
+    margin-right: 28px;
+}
+.galleria-thumbnails .galleria-image {
+	/*
+	height: 40px;
+    width: 60px;
+	*/
+	height: 35px;
+    width: 52px;
+    background: white;
+    margin: 0 5px 0 0;
+    border: 1px solid #000;
+    float: left;
+    cursor: pointer;
+}
+.galleria-counter {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    text-align: right;
+    color: #fff;
+    font: normal 11px/1 arial,sans-serif;
+    z-index: 1;
+}
+.galleria-loader {
+    background: #000;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+    display: none;
+    background: url(../images/classic-loader.gif) no-repeat 2px 2px;
+}
+.galleria-info {
+    width: 50%;
+    top: 15px;
+    left: 15px;
+    z-index: 2;
+    position: absolute;
+}
+.galleria-info-text {
+    background-color: #000;
+    padding: 12px;
+    display: none;
+    /* IE7 */ zoom:1;
+}
+.galleria-info-title {
+    font: bold 12px/1.1 arial,sans-serif;
+    margin: 0;
+    color: #fff;
+	margin-bottom: 7px;
+}
+.galleria-info-description {
+    font: italic 12px/1.4 georgia,serif;
+    margin: 0;
+    color: #bbb;
+}
+.galleria-info-close {
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-position: -753px -11px;
+    opacity: .5;
+    filter: alpha(opacity=50);
+    cursor: pointer;
+    display: none;
+}
+.notouch .galleria-info-close:hover{
+    opacity:1;
+    filter: alpha(opacity=100);
+}
+.touch .galleria-info-close:active{
+    opacity:1;
+    filter: alpha(opacity=100);
+}
+.galleria-info-link {
+    background-position: -669px -5px;
+    opacity: .7;
+    filter: alpha(opacity=70);
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background-color: #000;
+}
+.notouch .galleria-info-link:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.touch .galleria-info-link:active {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.galleria-image-nav {
+    position: absolute;
+    top: 50%;
+    margin-top: -62px;
+    width: 100%;
+    height: 62px;
+    left: 0;
+}
+.galleria-image-nav-left,
+.galleria-image-nav-right {
+    opacity: .3;
+    filter: alpha(opacity=30);
+    cursor: pointer;
+    width: 62px;
+    height: 124px;
+    position: absolute;
+    left: 10px;
+    z-index: 2;
+    background-position: 0 46px;
+}
+.galleria-image-nav-right {
+    left: auto;
+    right: 10px;
+    background-position: -254px 46px;
+    z-index: 2;
+}
+.notouch .galleria-image-nav-left:hover,
+.notouch .galleria-image-nav-right:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.touch .galleria-image-nav-left:active,
+.touch .galleria-image-nav-right:active {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.galleria-thumb-nav-left,
+.galleria-thumb-nav-right {
+    cursor: pointer;
+    display: none;
+    background-position: -495px 5px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 40px;
+    width: 23px;
+    z-index: 3;
+    opacity: .8;
+    filter: alpha(opacity=80);
+}
+.galleria-thumb-nav-right {
+    background-position: -578px 5px;
+    border-right: none;
+    right: 0;
+    left: auto;
+}
+.galleria-thumbnails-container .disabled {
+    opacity: .2;
+    filter: alpha(opacity=20);
+    cursor: default;
+}
+.notouch .galleria-thumb-nav-left:hover,
+.notouch .galleria-thumb-nav-right:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    background-color: #111;
+}
+.touch .galleria-thumb-nav-left:active,
+.touch .galleria-thumb-nav-right:active {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    background-color: #111;
+}
+.notouch .galleria-thumbnails-container .disabled:hover {
+    opacity: .2;
+    filter: alpha(opacity=20);
+    background-color: transparent;
+}
+
+.galleria-carousel .galleria-thumb-nav-left,
+.galleria-carousel .galleria-thumb-nav-right {
+    display: block;
+}
+.galleria-thumb-nav-left,
+.galleria-thumb-nav-right,
+.galleria-info-link,
+.galleria-info-close,
+.galleria-image-nav-left,
+.galleria-image-nav-right {
+    background-image: url(../images/classic-map.png);
+    background-repeat: no-repeat;
+}
+
+.charte{
+	width: 101px;
+	height: 34px;
+	text-transform: uppercase;
+	background: #f5f5f5;
+	border: 1px solid #c8c8c8;
+	color: #69605b;
+	font-family: 'roboto_condensedbold';
+	font-size: 14px; 
+	padding: 7px 5px;
+	cursor: pointer;
+}
+.charte:hover{
+	background: #69605b;
+	color: #f5f5f5;
+}
+.expanded:hover ul{
+	display: block !important;
+}
+#page-wrapper{
+	min-height: 650px;
+}
+
+ @media screen and (max-device-width: 568px) {
+html, body{
+		min-height: 520px;
+	}
+	.front h1{
+		margin-top: -10px;
+		margin-bottom: 26px;
+	}
+	h1{
+		font-size: 24px;
+		margin-top: -3px;
+		margin-bottom: 0;
+	}
+	#form-contact-intro-logo{
+		width: 100%;
+	}
+	img.bg{
+		z-index: -1;
+	}
+	header, .bandeau, .visuel{
+		overflow: hidden;
+	}
+	header{
+		height: 363px;
+	}
+	.menu-wrapper{
+		display: none;
+	}
+	.front .content-image{
+		display: none;
+	}
+	.container{
+		margin: 0;
+	}
+	.node-article {
+		background-color: none; 
+		font-size: 14px;
+		line-height: 16px;
+		padding-left: 15px;
+		margin-left: 0px;
+		color: #707070;
+	}
+	.node-article .content{
+		margin-left: 0;
+	}
+	footer{
+		min-height: 115px;
+	}
+	.adresse {
+		width: 235px;
+		font-size: 13px;
+		margin-top: 10px !important;
+	}
+	nav{
+		display: block !important;
+	}
+	nav ul{
+		background: rgba(55,47,45,0.9);
+		clear: both;
+	}
+	nav ul ul{
+		background: none;
+	}
+	nav ul li{
+		border-bottom: 1px solid #615b5a;
+	}	
+	nav ul li li{
+		border-bottom: none;
+	}
+	nav ul li a{
+		font-family: "roboto_condensedregular";
+		font-size: 16px;
+		text-transform: uppercase;
+		color: #fff;
+	}
+	nav ul li li a{
+		font-size: 15px;
+		text-transform: lowercase;
+		color: #b7b1a8;
+		font-family: "roboto_condensedregular"
+	}
+	nav .menuActive{
+		-webkit-transition: all .4s ease-in-out;  
+		-moz-transition: all .4s ease-in-out;
+		transition: all .4s ease-in-out;  
+	}
+	nav{
+		min-height: 53px;
+		transition: all 0.7s ease-in-out;
+		overflow: hidden;
+		z-index: 99;
+	}
+	ul li.expanded, .menu-698, .menu-709{
+		list-style: none !important;
+	}
+	ul li.leaf{
+		list-style-image: none; 
+		font-size: 25px;
+		padding-bottom: 0;
+		height: 30px;
+	}
+	nav ul .active{
+		color: #f5a200;
+	}
+	.menuMobile{
+		width: 142px;
+		float: left;
+		height: 53px;
+		display: block;
+	}
+	.telMobile{
+		font-family: "roboto_condensedregular";
+		font-size: 19px;
+		color: #372f2d;
+		float: left;
+		height: 53px;
+		display: block;
+		padding-top: 15px;
+		margin-left: 12px;
+		width: 148px;
+	}
+	.adresse{
+		display: none;
+	}
+	.adresseMobile{
+		display: block !important;
+	}
+	#block-menu-menu-mention-credit a{
+		font-size: 11px;
+	}
+	#nav-toggle { position: absolute; left: 13px; top: 13px; z-index: 9999999999999999999; }
+
+	#nav-toggle { cursor: pointer; padding: 10px 35px 16px 0px; }
+	#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+	  cursor: pointer;
+	  height: 7px;
+	  width: 31px;
+	  background: #534d4b;
+	  position: absolute;
+	  display: block;
+	  content: '';
+	}
+	#nav-toggle span:before {
+	  top: -11px; 
+	}
+	#nav-toggle span:after {
+	  bottom: -11px;
+	}
+
+	#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+	  transition: all 500ms ease-in-out;
+	}
+	#nav-toggle.activeCross span {
+	  background-color: transparent;
+	}
+	#nav-toggle.activeCross span:before, #nav-toggle.activeCross span:after {
+	  top: 0;
+	}
+	#nav-toggle.activeCross span:before {
+	  -webkit-transform: rotate(45deg);
+	  -moz-transform: rotate(45deg);
+	  transform: rotate(45deg);
+	}
+	#nav-toggle.activeCross span:after {
+	  -webkit-transform: rotate(-45deg);
+	  -moz-transform: rotate(-45deg);
+	  transform: rotate(-45deg);
+	}
+	#block-menu-menu-menu-mobile{
+		height: 0;
+		transition: all 0.7s ease-in-out;
+	}
+	.front .bandeau {
+		height: 292px;
+	}
+	.MenuActive {
+		height: 588px !important;
+		display: block !important;
+		transition: all 0.7s ease-in-out;
+	}
+	.MenuActiveHeader{
+		min-height: 660px !important;
+		transition: all 0.7s ease-in-out;
+	}
+	.MenuActiveHeader .logoMobile{
+		opacity: 0 !important;
+		display: none;
+	}
+	.bandeau{
+		margin-top: 0;
+		transition: all 0.7s ease-in-out;
+		width: 320px;
+	}
+	#block-menu-menu-menu-mobile .menu{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	#block-menu-menu-menu-mobile h2{
+		display: none;
+	}
+	#sticker{
+		height: 240px; 
+		width: 320px;
+		overflow: inherit;
+		position: relative !important;
+		margin-top: 0; 
+	}
+	#sticker-sticky-wrapper{
+		margin-bottom: 52px;
+	}
+	#edit-submit-recherche, #edit-field-bien-taxo-tid-wrapper{
+		margin-left: 0 !important;
+	}
+	#views-exposed-form-recherche-page .views-submit-button input{
+		position: absolute;
+		bottom: -23px;
+		width: 280px;
+		left: 22px;
+		height: 47px;
+	}
+	div#edit-field-bien-reference-value-wrapper {
+		position: absolute;
+		bottom: 55px;
+		right: 148px;
+	}
+	#edit-field-bien-reference-value-wrapper label{
+		left: 100px;
+		top: 18px;
+	}
+	#edit-field-bien-reference-value{
+		left: 93px;
+		bottom: -20px;
+	}
+	.page-nos-biens-a-la-vente .cover, .node-type-bien .cover{
+		display: none;
+	}
+	.page-nos-biens-a-la-vente header, .node-type-bien header{
+		height: 53px;
+	}
+	.bien-row-content{
+		width: 100%;
+	}
+	.node-type-bien #block-views-galerie-bien-block-1 {
+		float: left;
+		width: 300px;
+		position: relative;
+		z-index: 1;
+		top: 0;
+		margin-left: 0;
+	}
+	#galerie{
+		width: 270px;
+		height: 268px;
+	}
+	#cadre_galerie{
+		width: 305px;
+		background: url("../images/back-galleria.png")no-repeat -67px -56px;
+	}
+	#cadre_galerie_2{
+		width: 275px;
+	}
+	#thumb-tray{
+		width: 225px;
+		bottom: -226px;
+	}
+	#cadre_galerie_2 {
+		height: 278px;
+		padding: 0px 0px 0 11px;
+	}
+	#supersized li {
+		background: none;
+		margin-top: -50px;
+	}
+	.contentBien {
+		padding-left: 0px;
+		padding-right: 0;
+		width: 290px !important;
+		margin: -62px auto;
+	}
+	#header-bien-prix{
+		float: right;
+	}
+	#bien-logolc{
+		display: none;
+	}
+	#bien-buttons{
+		display: none;
+	}
+	#thumb-back, #thumb-forward{
+		bottom: -14px;
+	}
+	.node-type-bien footer{
+		margin-top: 40px;
+	}
+
+	#content-formdemande-visuel{
+		display: none;
+	}
+	.webform-component-fieldset {
+		float: inherit !important;
+		width: 290px !important;
+	}
+	#webform-client-form-5 input, #webform-client-form-5 textarea, #webform-client-form-25 fieldset input, #webform-component-acquereur-commentaires textarea, #webform-client-form-5 textarea, #webform-component-acquereur-commentaires textarea{
+		width: 253px;
+	}
+	#webform-client-form-5 #webform-component-commentaires, #webform-component-acquereur-commentaires, #webform-component-contact-message{
+		background: url("../images/comment-back.png")no-repeat;
+		min-height: 155px;
+	}
+	#webform-client-form-5 textarea, #webform-component-acquereur-commentaires textarea{
+		height: 109px;
+	}
+	#webform-client-form-5 #edit-actions #edit-submit, #webform-client-form-25 #edit-actions #edit-submit, #webform-client-form-19 #edit-actions #edit-submit{		float: inherit;
+		width: 280px;
+		height: 47px;
+		background: url("../images/sendmobile.png")no-repeat;
+		margin-top: 20px;
+		margin-bottom: 40px;
+	}
+	.form-actions{
+		width: 282px;
+	}
+	#form-obligatoire{
+		margin-bottom: 20px;
+	}
+	#webform-client-form-25 #webform-component-acquereur-vos-coordonnees{
+		background: #f5f5f5;
+		border: 1px solid #cccccb;
+		width: 290px !important;
+		min-height: 360px;
+	}
+	#content-formdemande-form legend{
+		width: 290px;
+	}
+	#webform-component-acquereur-vos-coordonnees--acquereur-nom, #webform-component-acquereur-vos-coordonnees--acquereur-telephone, #webform-component-acquereur-vos-coordonnees--acquereur-tel-bureau, #webform-component-acquereur-vos-coordonnees--acquereur-email, #webform-component-acquereur-vos-coordonnees--acquereur-fax{
+		width: inherit;
+	}
+	#webform-component-acquereur-architecture, #webform-component-acquereur-situation, #webform-component-acquereur-etat-des-batiments, #webform-component-acquereur-surface-hab, #webform-component-acquereur-surface-du-terrain{
+		/*margin: 0 0 0 30px !important;*/
+		float: none !important;
+		padding-bottom: 17px;
+		border-bottom: 1px solid #fff;
+		width: 290px;
+		padding-top: 8px
+	}
+	#webform-component-acquereur-budget-ideal {
+		clear: left;
+		float: inherit;
+		background-color: #dad6d1;
+		padding: 5px 25px 5px 10px;
+		margin: 0;
+		width: 290px;
+	}
+	#webform-component-acquereur-budget-maxi {
+		float: inherit;
+		background-color: #dad6d1;
+		padding: 5px 25px 5px 10px;
+		margin-top: 0; 
+		width: 290px;
+	}
+	.form-item label, .form-item .description{
+		margin: 0 0 0 30px !important;
+	}
+	#webform-component-acquereur-vos-coordonnees .form-item label{
+		margin: 0 0 0 10px !important;
+	}
+	#webform-client-form-25 textarea{
+		width: 246px;
+	}
+	#webform-client-form-25 .webform-component-textarea label{
+		left: 0 !important;
+
+	}	
+	#webform-client-form-25 .webform-component-textarea{
+		margin-top: 15px
+	}
+	#webform-component-acquereur-surface-hab, #webform-component-acquereur-surface-du-terrain{
+		padding-bottom: 45px;
+	}
+	#edit-submitted-acquereur-surface-hab, #edit-submitted-acquereur-surface-du-terrain{
+		position: absolute !important;
+		margin-top: 41px !important;
+		left: 45px !important;
+	}
+	.node-article .content-image{
+		display: none;
+	}
+	.node-article .content, .container{
+		width: 100%;
+	}
+	#content-map{
+		width: 290px;
+	}
+	#map iframe{
+		width: 260px !important;
+	}
+	#node-19 .content-contact{
+		padding: 0;
+	}
+	.visuel{
+		display: none;
+	}
+	.visuelMobile{
+		display: block !important;
+		height: 237px;
+	}
+	.front .logoMobile{
+		position: absolute;
+		bottom: 13px;
+		opacity: 1;
+		transition: all 0.7s ease-in-out;
+		width: 210px;
+		height: 107px !important;
+	}
+	.front .ombreMobile{
+		width: 100%;
+	}
+	.front header{
+		height: 291px;
+	}
+	.logoMobile{
+		bottom: 9px;
+		position: absolute;
+	}
+	.facebook{
+		background-image: url(../images/menu-fb-off.png);
+		background-repeat: no-repeat;
+		background-position: 5px 3px;
+		width: 32px;
+		height: 25px;
+		display: block;
+		float: right;
+		margin-top: -3px;
+		margin-left: 10px;
+	}
+	.facebook:hover{
+		background-image: url(../images/menu-fb-on.png);
+		background-repeat: no-repeat;
+	}
+	.MenuActiveHeader .menuMobile{
+		background: #413937;
+	}
+	.MenuActiveHeader #nav-toggle span:before, .MenuActiveHeader #nav-toggle span:after {
+		background: #fff;
+	}
+	nav ul ul {
+		list-style: square !important;
+		color: #b7b1a8;
+		padding-left: 10px;
+	}
+	.bandeau{
+		padding: 0 0 17px 0;
+	}
+	.MenuActiveHeader .bandeau{
+		height: 668px;
+	}
+	.modal{
+		padding-top: 50%;
+	}
+	#webform-client-form-5 #webform-component-vos-coordonnees, 
+	#webform-client-form-5 #webform-component-bien-a-vendre-ou-a-estimer,
+	#webform-client-form-5 #webform-component-commentaires,
+	#webform-component-acquereur-commentaires, 
+	#webform-component-contact-message,
+	#content-map,
+	#node-19 #webform-component-vos-coordonnees{
+		background: #f5f5f5;
+		border: 1px solid #c9c9c9;
+		margin-bottom: 20px;
+		position: relative !important;
+	}
+	#webform-client-form-5 #webform-component-vos-coordonnees:after, 
+	#webform-client-form-5 #webform-component-bien-a-vendre-ou-a-estimer:after,
+	#webform-client-form-5 #webform-component-commentaires:after,
+	#webform-component-acquereur-commentaires:after, 
+	#webform-component-contact-message:after,
+	#content-map:after,
+	#node-19 #webform-component-vos-coordonnees:after{
+		right: 10px !important;
+		left: auto !important;
+		-webkit-transform: rotate(6deg) !important;
+		-moz-transform: rotate(6deg) !important;
+		-ms-transform: rotate(6deg) !important;
+		-o-transform: rotate(6deg) !important;
+		transform: rotate(6deg) !important;
+	}
+	#webform-client-form-5 #webform-component-vos-coordonnees:after, 
+	#webform-client-form-5 #webform-component-vos-coordonnees:before, 
+	#webform-client-form-5 #webform-component-bien-a-vendre-ou-a-estimer:after,
+	#webform-client-form-5 #webform-component-bien-a-vendre-ou-a-estimer:before,
+	#webform-client-form-5 #webform-component-commentaires:after,
+	#webform-client-form-5 #webform-component-commentaires:before, 
+	#webform-component-acquereur-commentaires:after,
+	#webform-component-acquereur-commentaires:before, 
+	#webform-component-contact-message:after, 
+	#webform-component-contact-message:before,
+	#content-map:after,
+	#content-map:before,
+	#node-19 #webform-component-vos-coordonnees:after,
+	#node-19 #webform-component-vos-coordonnees:before {
+		bottom: 13px;
+		left: 10px;
+		width: 50%;
+		height: 20%;
+		max-width: 300px;
+		max-height: 100px;
+		-webkit-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.3);
+		-moz-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.3);
+		box-shadow: 0 15px 10px rgba(0, 0, 0, 0.3);
+		-webkit-transform: rotate(-6deg);
+		-moz-transform: rotate(-6deg);
+		-ms-transform: rotate(-6deg);
+		-o-transform: rotate(-6deg);
+		transform: rotate(-6deg);
+		content: "";
+		position: absolute;
+		z-index: -2;
+	}
+	#webform-client-form-5 #webform-component-vos-coordonnees .fieldset-wrapper, #webform-client-form-5 #webform-component-bien-a-vendre-ou-a-estimer .fieldset-wrapper{
+		padding-bottom: 10px;
+	}
+	#webform-component-commentaires{
+		width: 290px;
+	}
+	.form-item.form-type-radio{
+		height: 28px;
+	}
+	#content-formdemande-form{
+		width: 290px;
+	}
+	.form-item-field-bien-reference-value:after{
+		left: 4px;
+	}
+	.views-widget div.selector span{
+		width: 278px;
+	}
+	.views-widget div.selector{
+		width: 286px;
+	}
+	.views-exposed-widgets{
+		padding: 0 0 0 18px;
+	}
+	#edit-field-bien-taxo-tid-wrapper, #edit-field-bien-fourchetteprix-tid-wrapper, #edit-field-bien-sort-price{
+		margin: 10px 0 0 0;
+	}
+	.view-recherche .view-content{
+		margin-right: -15px !important;
+		margin-left: -30px !important;
+	}
+	.view-recherche .view-content h1{
+		padding-left: 25px;
+	}
+	.view-id-recherche .view-content .views-row{
+		padding: 10px 15px;
+		width: 320px;
+	}
+	.view-recherche .bien-row-image{
+		width: 273px;
+		margin: 0 10px;
+	}
+	.view-recherche .bien-row-content{
+		padding: 0 10px;
+	}
+	.bien-row-content-content .item-list ul li{
+		clear: both;
+	}
+	.bien-row-content-resume{
+		padding: 13px 0 10px 0;
+	}
+	#header-node-bien h1{
+		float: none;
+		margin: 42px 0 20px -10px;
+	}
+	.print{
+		display: none !important;
+	}
+	#header-bien-retour{
+		width: inherit;
+		margin-bottom: 20px;
+	}
+	#header-node-bien #bien-reference{
+		margin-left: -2px;
+	}
+	#cadre_galerie{
+		width: 297px;
+		margin: 0  0 0 -4px;
+		background: #ffffff;
+		border:1px solid #e0e0df;
+		padding: 15px; 
+	}
+	#cadre_galerie_2{
+		padding: 0;
+		min-height: 275px;
+	}
+	#supersized img{
+		height: 260px !important;
+		width: auto !important;
+		margin: 0 auto !important;
+		text-align: center;
+	}
+	.diagnostic{
+		margin-bottom: 67px;
+	}
+	.bienBtnMobile{
+		display: block !important;
+	}
+	.bienBtnMobile .sendtofriend, .bienBtnMobile .demandeinfo, .bienBtnMobile .sharefb{
+		width: 280px;
+		height: 47px !important;
+		float: none !important;
+		margin: 0 auto;
+		font-family: 'roboto_condensedbold';
+		font-size: 20px;
+	}
+	.bienBtnMobile .sendtofriend:after, .bienBtnMobile .demandeinfo:after, .bienBtnMobile .sharefb:after,
+	.bienBtnMobile .sendtofriend:before, .bienBtnMobile .demandeinfo:before, .bienBtnMobile .sharefb:before{
+		display: none !important;
+	}
+	.mention{
+		float: left;
+		width: inherit;
+		margin-top: 10px;
+		width: 180px;
+	}
+	#block-menu-menu-mention-credit {
+		float: right;
+		margin-top: -23px;
+		margin-left: 4px;
+		width: 140px;
+	}
+	#page-wrapper{
+		min-height: 450px;
+	}
+	.imgMobile{
+		height: 224px;
+	}
+	.totop{
+		float: right;
+		margin-right: 20px;
+		margin-top: 20px;
+		margin-bottom: -10px;
+	}
+	.node-type-bien .totop{
+		margin-top: 60px;
+	}
+	.bandeau{
+		height: 288px;
+	}
+	header{
+		height: 308px;
+	}
+	#webform-component-vos-coordonnees label, #webform-client-form-5 label{
+		margin: 0 0 0 10px !important;
+	}
+	#webform-component-vos-coordonnees input, #webform-client-form-5 input, #edit-submitted-commentaires, #webform-component-acquereur-vos-coordonnees input, #edit-submitted-acquereur-commentaires{
+		border: none !important;
+	}
+	.page-node-5 h1, .page-node-25 h1{
+		font-size: 26px;
+	}
+	.form-type-radio label:before{
+		top: 3px;
+	}
+	#webform-component-acquereur-vos-coordonnees .form-item{
+		padding: 0 0 7px 0;
+	}
+	.adresseMobile span{
+		text-shadow: none;
+		font-size: 16px;
+	}
+	#node-18{
+		height: 365px;
+	}
+	.menu-698{
+		padding-bottom: 40px !important; 
+	}
+	.menu-699, .menu-702, .menu-706{
+		padding-top: 7px !important; 
+	}
+	#block-menu-menu-menu-mobile .menu{
+		margin-top: -15px
+	}
+
+}
+  /* Tablette */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation:landscape){
+	.container{
+		width: 980px;
+	}
+	#page-wrapper{
+		margin: 0 auto;
+		min-height: 670px;
+	}
+
+
+}
+@media screen and (min-device-width: 480px) and (max-device-width: 768px) and (orientation:portrait){
+	html{
+		margin: 0 !important;
+		padding: 0 !important;
+	} 
+	.front header{
+		height: 408px;
+		padding: 0 20px;
+	}
+	header{
+		height: 320px;
+	}
+	#block-menu-menu-menu-mobile .menu{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	#block-menu-menu-menu-mobile h2{
+		display: none;
+	}
+	.visuel{
+		width: 738px;
+	}
+	.front header{
+		height: 420px;
+	}
+	.front .bandeau{
+		height: 392px;
+		margin-top: 15px;
+	}
+	.visuel::after{
+		bottom: 58px;
+	}
+	.logoSiteHome{
+		bottom: 55px;
+		left: 40px;
+	}
+	img.bg{
+		z-index: -1;
+	}
+	.node-article {
+	    padding: 0 !important;
+	    margin: 0 !important;
+	}
+	#block-menu-main-menu{
+		display: none !important;
+	}
+	nav{
+		display: block !important;
+	}
+	nav ul{
+		background: rgba(55,47,45,0.9);
+		clear: both;
+	}
+	nav ul ul{
+		background: none;
+	}
+	nav ul li{
+		border-bottom: 1px solid #615b5a;
+	}	
+	nav ul li li{
+		border-bottom: none;
+	}
+	nav ul li a{
+		font-family: "roboto_condensedregular";
+		font-size: 16px;
+		text-transform: uppercase;
+		color: #fff;
+	}
+	nav ul li li a{
+		font-size: 15px;
+		text-transform: lowercase;
+		color: #b7b1a8;
+		font-family: "roboto_condensedregular"
+	}
+	nav .menuActive{
+		-webkit-transition: all .4s ease-in-out;  
+		-moz-transition: all .4s ease-in-out;
+		transition: all .4s ease-in-out;  
+	}
+	nav{
+		min-height: 53px;
+		transition: all 0.7s ease-in-out;
+		overflow: hidden;
+		z-index: 99;
+		margin-left: -18px;
+	}
+	ul li.expanded, .menu-698, .menu-709{
+		list-style: none !important;
+	}
+	ul li.leaf{
+		list-style-image: none; 
+		font-size: 20px;
+		padding-bottom: 0;
+	}
+	nav ul .active{
+		color: #f5a200;
+	}
+	.menuMobile{
+		width: 142px;
+		float: left;
+		height: 53px;
+		display: block;
+	}
+	.telMobile{
+		font-family: "roboto_condensedregular";
+		font-size: 17px;
+		color: #372f2d;
+		float: left;
+		height: 53px;
+		display: block;
+		padding-top: 15px;
+		margin-left: 30px;
+	}
+	.front .logoSiteHome{
+		position: absolute;
+		bottom: 27px;
+		opacity: 1;
+		transition: all 0.7s ease-in-out;
+	}
+	.logoSiteHome{
+		bottom: 9px;
+		position: absolute;
+	}
+	#nav-toggle { position: absolute; left: 13px; top: 13px; z-index: 9999999999999999999; }
+
+	#nav-toggle { cursor: pointer; padding: 10px 35px 16px 0px; }
+	#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+	  cursor: pointer;
+	  height: 7px;
+	  width: 31px;
+	  background: #534d4b;
+	  position: absolute;
+	  display: block;
+	  content: '';
+	}
+	#nav-toggle span:before {
+	  top: -11px; 
+	}
+	#nav-toggle span:after {
+	  bottom: -11px;
+	}
+
+	#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+	  transition: all 500ms ease-in-out;
+	}
+	#nav-toggle.activeCross span {
+	  background-color: transparent;
+	}
+	#nav-toggle.activeCross span:before, #nav-toggle.activeCross span:after {
+	  top: 0;
+	}
+	#nav-toggle.activeCross span:before {
+	  -webkit-transform: rotate(45deg);
+	  -moz-transform: rotate(45deg);
+	  transform: rotate(45deg);
+	}
+	#nav-toggle.activeCross span:after {
+	  -webkit-transform: rotate(-45deg);
+	  -moz-transform: rotate(-45deg);
+	  transform: rotate(-45deg);
+	}
+	#block-menu-menu-menu-mobile{
+		height: 0;
+		transition: all 0.7s ease-in-out;
+	}
+	.MenuActive {
+		height: 588px !important;
+		display: block !important;
+		transition: all 0.7s ease-in-out;
+	}
+	.MenuActiveHeader{
+		min-height: 660px !important;
+		transition: all 0.7s ease-in-out;
+	}
+	.MenuActiveHeader .logoSiteHome, .MenuActiveHeader .logoSite{
+		opacity: 0;
+	}
+	.bandeau{
+		margin-top: 0;
+		transition: all 0.7s ease-in-out;
+		width: 728px;
+	}
+	.bandeau .list_carousel img{
+		width: 691px;
+	}
+	nav ul ul {
+		list-style: square !important;
+		color: #b7b1a8;
+		padding-left: 10px;
+	}
+	ul li.leaf{
+		list-style-image: none; 
+	}
+	.node-article .content{
+		width: 250px;
+	}
+	#page-wrapper{
+		margin: 0 auto;
+		min-height: 670px;
+	}
+	.telMobile span{
+		display: none;
+	}
+	.facebook{
+		background-image: url(../images/menu-fb-off.png);
+		background-repeat: no-repeat;
+		background-position: 5px 3px;
+		width: 32px;
+		height: 25px;
+		display: block;
+		float: right;
+		margin-top: -3px;
+		margin-left: 10px;
+	}
+	.facebook:hover{
+		background-image: url(../images/menu-fb-on.png);
+		background-repeat: no-repeat;
+	}
+	.visuel img{
+		width: 691px;
+	}
+	.node-article .content-image{
+		width: 295px;
+		height: 240px;
+		background:#f3f2f0;
+		border:1px solid #dfdedc;
+	}
+	.node-article .content-image img{
+		width: 274px;
+		height: 219px;
+	}
+	.node-article .content{
+		width: 380px;
+	}
+	.logoSiteHome{
+		bottom: 30px;
+		left: 40px;
+	}
+	.logoSiteHome img{
+		width: 215px;
+	}
+	.front .visuel{
+		height: 316px;
+	}
+	.front .visuel:after{
+		background: url(../images/opacity.png);
+		bottom: 20px;
+		content: "";
+		display: block;
+		height: 97px;
+		position: absolute;
+		width: 731px;
+	}
+	.visuel:after{
+		background: url(../images/opacity.png);
+		bottom: 20px;
+		content: "";
+		display: block;
+		height: 97px;
+		position: absolute;
+		width: 691px;
+	}
+	.MenuActiveHeader .visuel:after{
+		opacity: 0;
+	}
+	.bien-row-content{
+		width: 430px;
+	}
+	.view-id-recherche .view-content{
+		padding: 0;
+	}
+	.bandeau{
+		height: 312px;
+	}
+	#content-formdemande-visuel{
+		display: none;
+	}
+	#content-formdemande-form{
+		width: 720px;
+		text-align: center;
+	}
+	#webform-client-form-5 #webform-component-vos-coordonnees, 
+	#webform-client-form-5 #webform-component-bien-a-vendre-ou-a-estimer,
+	#webform-client-form-5 #webform-component-commentaires,
+	#webform-component-acquereur-commentaires, 
+	#webform-component-contact-message,
+	#webform-client-form-25 #webform-component-acquereur-vos-coordonnees, 
+	#node-19 #webform-component-vos-coordonnees,
+	#content-map{
+		background: #f5f5f5;
+		border: 1px solid #c9c9c9;
+		margin-bottom: 20px;
+		position: relative !important;
+	}
+	#webform-client-form-5 #webform-component-vos-coordonnees, 
+	#webform-client-form-5 #webform-component-bien-a-vendre-ou-a-estimer{
+		width: 350px;
+		margin-right: 20px;		
+	}
+	#edit-submitted-commentaires, #edit-submitted-acquereur-commentaires{
+		width: 683px !important;
+		height: 125px !important;	
+	}
+	#webform-component-acquereur-vos-coordonnees{
+		width: 720px !important;
+	}
+
+	#webform-client-form-5 #webform-component-vos-coordonnees:after, 
+	#webform-client-form-5 #webform-component-bien-a-vendre-ou-a-estimer:after,
+	#webform-client-form-5 #webform-component-commentaires:after,
+	#webform-component-acquereur-commentaires:after, 
+	#webform-component-contact-message:after,
+	#webform-client-form-25 #webform-component-acquereur-vos-coordonnees:after, 
+	#node-19 #webform-component-vos-coordonnees:after,
+	#content-map:after{
+		right: 10px !important;
+		left: auto !important;
+		-webkit-transform: rotate(6deg) !important;
+		-moz-transform: rotate(6deg) !important;
+		-ms-transform: rotate(6deg) !important;
+		-o-transform: rotate(6deg) !important;
+		transform: rotate(6deg) !important;
+	}
+	#webform-client-form-5 #webform-component-vos-coordonnees:after, 
+	#webform-client-form-5 #webform-component-vos-coordonnees:before, 
+	#webform-client-form-5 #webform-component-bien-a-vendre-ou-a-estimer:after,
+	#webform-client-form-5 #webform-component-bien-a-vendre-ou-a-estimer:before,
+	#webform-client-form-5 #webform-component-commentaires:after,
+	#webform-client-form-5 #webform-component-commentaires:before, 
+	#webform-component-acquereur-commentaires:after,
+	#webform-component-acquereur-commentaires:before, 
+	#webform-component-contact-message:after, 
+	#webform-component-contact-message:before,
+	#webform-client-form-25 #webform-component-acquereur-vos-coordonnees:after,
+	#webform-client-form-25 #webform-component-acquereur-vos-coordonnees:before,
+	#node-19 #webform-component-vos-coordonnees:after,
+	#node-19 #webform-component-vos-coordonnees:before,
+	#content-map:after,
+	#content-map:before {
+		bottom: 13px;
+		left: 10px;
+		width: 50%;
+		height: 20%;
+		max-width: 300px;
+		max-height: 100px;
+		-webkit-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.3);
+		-moz-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.3);
+		box-shadow: 0 15px 10px rgba(0, 0, 0, 0.3);
+		-webkit-transform: rotate(-6deg);
+		-moz-transform: rotate(-6deg);
+		-ms-transform: rotate(-6deg);
+		-o-transform: rotate(-6deg);
+		transform: rotate(-6deg);
+		content: "";
+		position: absolute;
+		z-index: -2;
+	}
+	#webform-component-acquereur-vos-coordonnees--acquereur-nom, #webform-component-acquereur-vos-coordonnees--acquereur-telephone, #webform-component-acquereur-vos-coordonnees--acquereur-tel-bureau, #webform-component-acquereur-vos-coordonnees--acquereur-email, #webform-component-acquereur-vos-coordonnees--acquereur-fax{
+		margin-right: 72px;
+	}
+	#webform-component-acquereur-situation, #webform-component-acquereur-architecture, #webform-component-acquereur-etat-des-batiments{
+		text-align: left;
+	}
+	#webform-component-acquereur-budget-ideal, #webform-component-acquereur-budget-maxi{
+		margin: 20px 0;
+	}
+	#webform-component-acquereur-budget-maxi{
+		width: 73%;
+		text-align: left;
+	}
+	#webform-component-acquereur-surface-hab{
+		width: 136px;
+	}
+	.form-item.form-type-radio{
+		height: 28px;
+	}
+	#webform-component-acquereur-surface-du-terrain{
+		margin-left: 2px;
+	}
+	#cadre_galerie{
+		width: 373px;
+	}
+	#galerie{
+		width: 352px;
+	}
+	.node-type-bien #block-views-galerie-bien-block-1{
+		width: 370px;
+	}
+	#thumb-tray{
+		width: 305px;
+	}
+	.node-type-bien #main {
+		background: url("../images/back-bien.gif") repeat-y scroll 380px center rgba(0, 0, 0, 0);
+	}
+	#bien-logolc{
+		display: none;
+	}
+	#bien-buttons{
+		margin-left: 94px;
+	}
+	.contentBien{
+		padding-left: 50px;
+	}
+	#content-map{
+		width: 388px;
+	}
+	#content-map iframe{
+		width: 355px;
+	}
+	#node-19 .content-contact{
+		width: 300px;
+	}
+	.page-node-19 #webform-component-contact-message{
+		margin-bottom: 30px;
+	}
+	#node-19 #webform-component-vos-coordonnees{
+		padding: 16px 16px 17px;
+	}
+	.telMobile{
+		margin-top: -15px;
+		float: right;
+	}
+}
+.visuelMobile{
+	display: none;
+}
+.bien-row-content-footer.clearfix {
+    margin-top: -20px;
+}
+
+.views-ui-edit {
+    display: none !important;
+}
+.menu .view, .menu .view img{
+	width: 150px;
+	height: 116px;
+}
+.menu .view{
+	margin-left: 24px;
+}
+.menu .view-id-menu1_bien{
+	margin-left: 0;
+}
+.menuTitre a{
+    background: none repeat scroll 0 0 rgba(90, 78, 68, 0.85);
+    color: rgb(255, 255, 255) !important;
+    display: block;
+    font-family: "roboto_condensedregular" !important;
+    font-size: 11px !important;
+    height: 26px;
+    margin-top: -26px;
+    padding: 4px 0 !important;
+    position: relative;
+    text-align: center;
+    width: 150px;
+    z-index: 2;
+}
+.expanded .menu {
+    padding-top: 7px;
+}
+.menuImage a:hover{
+	background: none !important;
+}
+
+
+.list_carousel ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+}
+.list_carousel li {
+	font-size: 40px;
+	color: #999;
+	text-align: center;
+	background-color: #eee;
+	padding: 0;
+	display: block;
+	float: left;
+}
+.list_carousel.responsive {
+	width: auto;
+	margin-left: 0;
+}
+.clearfix {
+	float: none;
+	clear: both;
+}
+.prev {
+	float: left;
+	margin-left: 10px;
+}
+.next {
+	float: right;
+	margin-right: 10px;
+}
+.pager {
+	float: left;
+	width: 300px;
+	text-align: center;
+}
+.pager a {
+	margin: 0 5px;
+	text-decoration: none;
+}
+.pager a.selected {
+	text-decoration: underline;
+}
+.timer {
+	background-color: #999;
+	height: 6px;
+	width: 0px;
+}
+
+.bienBtnMobile{
+	display: none;
+}
+.menuTitre a:hover, .menu-views:hover .menuTitre a{
+	background: #3a2d26 !important;
+}
+#block-menu-main-menu ul ul li:hover img {
+    transform: scale(1.05, 1.05);
+    -webkit-transform: scale(1.05, 1.05);
+    -moz-transform: scale(1.05, 1.05);
+    -o-transform: scale(1.05, 1.05);
+
+    transition: all 0.2s linear 0s;
+}
+.menuImage{
+    height: 116px;
+    overflow: hidden;
+    width: 150px;
+}
+.menu-705{
+	display: none !important;
+}
+.adresseMobile{
+	display: none;
+}

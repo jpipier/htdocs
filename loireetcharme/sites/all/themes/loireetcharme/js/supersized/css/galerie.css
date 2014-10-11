@@ -1,0 +1,42 @@
+.node-type-bien #block-views-galerie-bien-block-1 {
+    float: left;
+    width: 500px;
+    position:absolute;
+    z-index:1;
+    top: 52px;
+    margin-left: 15px;
+}
+
+#cadre_galerie {
+    background-image: url("../../../images/back-galleria.png");
+    background-repeat: no-repeat;
+    padding: 1px;
+    width: 482px;
+}
+#cadre_galerie_2{
+    min-height: 428px;
+    padding:10px 14px 0 13px;
+}
+
+.view-galerie-bien{height:0;overflow:hidden;line-height:0;font-size:0;}
+
+#c_galerie_iframe{width:100%;height:100%;position:fixed;z-index:400;background:url('../img/galerie/fd.png') repeat 0 0;}
+#galerie_iframe{width:100%;height:100%;background:url('../img/galerie/ajax-loader-galerie.gif') no-repeat 50% 50%;}
+
+#galerie{position:relative;z-index:100;width:455px;height:322px;}
+#supersized, #supersized li{position:absolute;}
+#supersized li{background:#fff;}
+#galerie .loupe{position:absolute;width:29px;height:29px;background:url('../img/galerie/loupe.png') no-repeat 0 0;font-size:0;line-height:0;right:10px;bottom:10px;}
+#thumb-tray {
+    height: 56px;
+    left: 45px;
+    position: relative;
+    width: 365px;
+}
+#thumb-back, #thumb-forward{ position:absolute; z-index:5; bottom:-66px; height:56px; width:40px; }
+#thumb-tray{bottom:-332px;background:#fff;box-shadow:none;}
+ul#thumb-list li{margin:0 1px;}
+.no_nav #thumb-back, .no_nav #thumb-forward{display:none;}
+#thumb-back, #thumb-forward{background:none;}
+#thumb-back{background:#ececec url('../img/galerie/prev.png') no-repeat 50% 50%;}
+#thumb-forward{background:#ececec url('../img/galerie/next.png') no-repeat 50% 50%;}

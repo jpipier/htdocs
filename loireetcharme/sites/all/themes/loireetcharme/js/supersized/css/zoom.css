@@ -1,0 +1,19 @@
+.view-galerie-bien{height:0;overflow:hidden;line-height:0;font-size:0;}
+#bt_close{
+    cursor:pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: url(../img/close.gif) no-repeat 0 0;
+    width: 38px;
+    height: 38px;
+    text-indent: -9999px;
+}
+#bt_close:hover {
+    background-image: url(../img/close_on.gif);
+}
+
+#thumb-tray{height:98px; /* 56 + 42 */}
+ul#thumb-list li{width:89px; height:56px;}
+ul#thumb-list li img {width:89px;}
+#thumb-back, #thumb-forward{height:56px;}

@@ -1,0 +1,23 @@
+
+name = loireetcharme
+description = http://www.loireetcharme.com/
+package = Core
+version = VERSION
+core = 7.x
+
+stylesheets[all][] = css/bootstrap.css
+stylesheets[all][] = fonte/stylesheet.css
+stylesheets[all][] = css/uniform.default.css
+stylesheets[all][] = css/style.css
+stylesheets[print][] = css/print.css
+
+
+regions[header] = Header
+regions[page_top] = Page top
+regions[page_bottom] = Page bottom
+
+regions[content] = Content
+
+regions[footer] = Footer
+
+

@@ -1,0 +1,2512 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: Arial, Helvetica,sans-serif; 
+}
+
+/** Clear Floats Without Structural Markup: 
+---------------------------------
+*  http://www.positioniseverything.net/easyclearing.html
+*/
+.clearfix {
+        display: inline-block;
+}
+ 
+.clearfix:after {
+        clear: both;
+        display: block;
+        font-size: 0;
+        content: " ";
+        height: 0;
+        visibility: hidden;
+}
+ 
+/* Hides from IE-mac \*/
+* html .clearfix {
+        height: 1%;
+}
+ 
+.clearfix {
+        display: block;
+}
+/* End hide from IE-mac */
+
+
+strong{
+	color:#563e35;
+}
+
+p{
+	/*color:#6a6c6e;*/
+	color: #616162;
+	font-size:13px;
+	padding:0 0 10px 0;
+}
+
+a{
+	color:#706e71;
+	text-decoration:none;
+}
+a:hover{
+	text-decoration:underline;
+}
+img.bg{
+	min-height:100%;
+	min-width:1598px;
+	width:100%;
+	height:auto;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:-1;
+}
+
+.page-node-edit #main #content{
+	background-color:#fff;
+	padding:5px;
+	/*width: 800px;*/
+}
+
+/* footer */
+#footer-wrapper{
+	height:159px;
+	background-image: url(../images/footer-wrapper.png);
+	background-repeat: repeat-x;
+	overflow: hidden;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	position: absolute;
+	z-index: 20;
+
+}
+
+#footer-wrapper{
+	position: fixed;
+}
+
+
+
+#footer-tel-adresse{
+	position:absolute;
+	margin:120px 10px 0 0;
+	
+	z-index:10;
+	right:0;
+}
+#footer-tel-adresse p.tel{
+	float:right;
+	font-size:28px;
+	font-weight:bold;
+	color:#FFF;
+	padding:3px 0 0 0 ;
+}
+#footer-tel-adresse p.adresse{
+	float:left;
+	font-size:11px;
+	padding:5px 10px 0 0;
+	color:#FFF;
+	text-align:right;
+}
+
+#footer-wrapper #logo{
+	position:absolute;
+	z-index:0;
+}
+
+#footer-wrapper #block-menu-menu-mention-credit{
+	position:absolute;
+	z-index:1;
+	margin:140px 0 0 0;
+}
+#footer-wrapper #block-menu-menu-mention-credit ul,
+#footer-wrapper #block-menu-menu-mention-credit ul li{
+	margin:0;
+	padding:0;
+}
+#footer-wrapper #block-menu-menu-mention-credit span{
+	color:#a99e95;
+	font-size:10px;
+	display:block;
+	float:left;
+	padding: 0 0 0 5px;
+}
+#footer-wrapper #block-menu-menu-mention-credit a{
+	color:#a99e95;
+	font-size:10px;
+	text-decoration:none;
+	background-image: url(../images/tiret.gif);
+	background-repeat: no-repeat;
+	background-position: 0 2px;	
+	display:block;
+	float:left;
+	padding: 0 0 2px 5px;
+	margin: 0 0 0 5px
+}
+#footer-wrapper #block-menu-menu-mention-credit li.menu-586 a{
+	background-image: none;	
+}
+
+#footer-wrapper #block-menu-menu-mention-credit a:hover,
+#footer-wrapper #block-menu-menu-mention-credit a.active{
+color:#F5A200;
+}
+
+
+/* Form */
+form input, form textarea{
+	border:1px solid #ddd;
+}
+
+
+#block-menu-menu-mention-credit ul{
+list-style-type:none;
+}
+#block-menu-menu-mention-credit ul li{
+	float:left;
+	display:block;
+
+}
+
+
+/* menu */
+#block-system-main-menu{
+	margin:0 auto;
+	padding:23px 0 0 0;
+	width:800px;
+	padding-left: 64px;
+}
+#block-system-main-menu ul{
+	list-style-type:none;
+	position:absolute;
+}
+
+#block-system-main-menu ul li{
+	float:left;
+	display:block;
+	/*height: 21px;*/
+	position:relative;
+	padding: 6px 0 6px 0px;
+	margin:0 0 0 0px;
+	border:0;
+/*	background-color:red;*/
+}
+
+
+#block-system-main-menu ul li a{
+	display:block;
+	float:left;
+	color:#59493f;
+	text-decoration:none;
+	font-size:12px;
+	font-style:normal;
+	font-weight:bold;
+	text-transform:uppercase;
+	padding: 0 0 0 10px;
+	white-space:nowrap;
+}
+#block-system-main-menu ul li a:hover{
+	color:#FFF;
+}
+
+#block-system-main-menu ul li.expanded{
+
+}
+#block-system-main-menu ul li.active-trail{
+	color:#FFF;
+}
+
+
+#block-system-main-menu>.content>ul>li.active-trail,
+#block-system-main-menu>.content>ul>li:hover{
+	/*background-color:#ab9f97;*/
+	background-image: url(../images/menu.li.gif);
+	background-repeat: repeat-x;
+	
+	
+}
+#block-system-main-menu ul li:hover a,
+#block-system-main-menu ul li.active-trail a{
+	color:#fff;
+}
+#block-system-main-menu ul li.active-trail ul{
+	display:block;
+	background-color:#524b49;
+}
+#block-system-main-menu ul li.expanded:hover ul{
+	display:block;
+	background-color:#524b49;
+	z-index:2;
+}
+
+
+
+
+#block-system-main-menu ul li.menu-341{
+	width:81px;
+}
+#block-system-main-menu ul li.menu-339{
+	width:161px;
+}
+
+#block-system-main-menu ul li.menu-376{
+	width:83px;
+}
+
+.floatr {  
+	position: absolute;  
+	top: 10px;  
+	z-index: -1;  
+	width: 70px;  
+	height: 27px;  
+	background : rgba(157,144,135,1);  
+	-webkit-transition: all .4s ease-in-out;  
+	-moz-transition: all .4s ease-in-out;  
+	margin:13px 0 0 0;
+}  
+
+
+
+
+/*Sous elements*/
+#block-system-main-menu ul li ul{
+	display:none;
+	position:absolute;
+	margin:22px 0 0 0;
+	background-color:#524b49;
+	z-index:0;
+	border:0;
+	padding:0;
+}
+#block-system-main-menu ul li ul li{
+	border:0;
+	padding:2px 0 0 0;
+	margin:0;
+	display:block;
+	border-bottom:1px solid #5c5452;
+	height:18px;
+}
+#block-system-main-menu ul li ul li a:hover,
+#block-system-main-menu ul li ul li a.active
+{
+	color:#f5a200;
+}
+
+#block-system-main-menu ul li ul li a{
+	color:#fff;
+	font-size:11px;
+	text-transform:none;
+	margin:0;
+	border:0;
+	font-weight:normal;
+}
+#block-system-main-menu ul li ul li a:hover, 
+#block-system-main-menu ul li ul li a.active{
+	/*font-weight:bold;*/
+}
+#block-system-main-menu ul li ul li:hover,
+#block-system-main-menu ul li ul li.active-trail
+{
+background-color:#494240;
+}
+#block-system-main-menu ul li.menu-230,
+#block-system-main-menu ul li.menu-539
+{
+	padding: 6px 5px 0 10px ;
+}
+#block-system-main-menu ul li.menu-230 a,
+#block-system-main-menu ul li.menu-539 a
+{
+	color:transparent;
+	text-indent:-9999px;
+	background-image: url(../images/menu-home-off.png);
+	background-repeat: no-repeat;
+	height:27px; 
+	width:13px;	
+}
+#block-system-main-menu ul li.menu-230 a.active,
+#block-system-main-menu ul li.menu-539 a.active
+{
+	background-image: url(../images/menu-home-on.png);
+}
+
+
+/* tourisme */
+#block-system-main-menu ul li.menu-376,
+#block-system-main-menu ul li.menu-376 ul,
+#block-system-main-menu ul li.menu-376 ul li,
+#block-system-main-menu ul li.menu-376 ul li a{
+	width:85px;
+}
+#block-system-main-menu ul li.menu-376:hover{
+	min-height:100px;
+}
+
+/*Demandes*/
+#block-system-main-menu ul li.menu-373,
+#block-system-main-menu ul li.menu-373 ul,
+#block-system-main-menu ul li.menu-373 ul li,
+#block-system-main-menu ul li.menu-373 ul li a
+{
+	width:180px;
+}
+
+.MacIntel #block-system-main-menu ul li.menu-373,
+.MacIntel #block-system-main-menu ul li.menu-373 ul,
+.MacIntel #block-system-main-menu ul li.menu-373 ul li,
+.MacIntel #block-system-main-menu ul li.menu-373 ul li a,
+.MacPPC #block-system-main-menu ul li.menu-373,
+.MacPPC #block-system-main-menu ul li.menu-373 ul,
+.MacPPC #block-system-main-menu ul li.menu-373 ul li,
+.MacPPC #block-system-main-menu ul li.menu-373 ul li a {
+	width:185px;
+}
+
+#block-system-main-menu ul li.menu-373:hover{
+	min-height:50px;
+}
+
+/*agence*/
+#block-system-main-menu ul li.menu-426,
+#block-system-main-menu ul li.menu-426 ul,
+#block-system-main-menu ul li.menu-426 ul li,
+#block-system-main-menu ul li.menu-426 ul li a
+{
+	width:85px;
+}
+#block-system-main-menu ul li.menu-426:hover{
+	min-height:130px;
+}
+
+/*agence*/
+#block-system-main-menu ul li.menu-416,
+#block-system-main-menu ul li.menu-416 ul,
+#block-system-main-menu ul li.menu-416 ul li,
+#block-system-main-menu ul li.menu-416 ul li a
+{
+	width:160px;
+}
+#block-system-main-menu ul li.menu-416:hover{
+	min-height:130px;
+}
+/*Contact*/
+#block-system-main-menu ul li.menu-457,
+#block-system-main-menu ul li.menu-457 ul,
+#block-system-main-menu ul li.menu-457 ul li,
+#block-system-main-menu ul li.menu-457 ul li a
+{
+	width:130px;
+}
+
+.MacIntel #block-system-main-menu ul li.menu-457,
+.MacIntel #block-system-main-menu ul li.menu-457 ul,
+.MacIntel #block-system-main-menu ul li.menu-457 ul li,
+.MacIntel #block-system-main-menu ul li.menu-457 ul li a,
+.MacPPC #block-system-main-menu ul li.menu-457,
+.MacPPC #block-system-main-menu ul li.menu-457 ul,
+.MacPPC #block-system-main-menu ul li.menu-457 ul li,
+.MacPPC #block-system-main-menu ul li.menu-457 ul li a {
+	width:138px;
+}
+
+
+/*facebook*/
+#block-system-main-menu ul li.menu-545,
+#block-system-main-menu ul li.menu-545 a
+{
+	width:30px;
+	
+}
+#block-system-main-menu ul li.menu-545 a{
+	color:transparent;
+	text-indent:-9999px;
+	height:27px; 
+	width:13px;
+}
+#block-system-main-menu ul li.menu-545{
+	background-image: url(../images/menu-fb-off.png);
+	background-repeat: no-repeat;
+	background-position: 5px 3px;
+}
+#block-system-main-menu ul li.menu-545:hover{
+	background-image: url(../images/menu-fb-on.png);
+	background-repeat: no-repeat;
+}
+
+/*UK*/
+#block-system-main-menu ul li.menu-544,
+#block-system-main-menu ul li.menu-544 a
+{
+	width:33px;
+	
+}
+
+/* SURCHARGE MAC */
+.MacIntel #block-system-main-menu ul li a,
+.MacPPC #block-system-main-menu ul li a{
+	padding: 3px 0 0 10px;
+
+}
+
+
+
+#content{
+	width:980px;
+	min-height:300px;
+	margin:0 auto 170px auto;
+	/*border:1px red solid;*/
+
+
+}
+#content.bien{
+	background-image: url(../images/back-bien.gif);
+	background-repeat: repeat-y;
+	background-position: 467px 0 ;	
+}
+
+.node-type-album  #content.bien{
+	background-image: none;
+}
+
+
+/*Front*/
+#node-26 .content h1{
+	text-align:center;
+	padding:15px 36px 15px 0;
+}
+#node-26 .content {
+	width:980px;
+	/*border:1px red solid;*/
+}
+
+#node-26  .field-name-field-site-image{
+	background-image: url(../images/frontfdimage.gif);
+	background-repeat: no-repeat;
+	padding:11px 12px 12px 12px;
+	margin: 0 0 0 125px;
+}
+#node-26  .field-name-field-site-image .field-item{
+	position:absolute;
+}
+
+
+/*Node node-article*/
+.node-article{
+	/*background-color:#fff;*/
+	/*padding:0 70px 0 30px;*/
+	padding-left: 65px;
+}
+.node-article .content-image{
+	float:left;
+	width:409px;	
+	background-image: url(../images/back-image-article.png);
+	background-repeat: no-repeat;
+	padding:12px 12px 28px 12px;
+}
+.node-article .content{
+	float:left;
+	width:430px;
+}
+ h1{
+	color: #b7a093;
+	font-family:Georgia, Arial, Verdana;
+	font-style:italic;
+	font-size:27px;
+	font-weight:normal;
+	padding: 10px 0;
+}
+
+.node-article .content p{
+	color:#616162;
+	font-size:14px;
+}
+
+#webform-client-form-19 div{
+	border:0;margin:0;padding:0;
+}
+#webform-client-form-19 div.form-item{
+	position:relative 
+
+}
+#webform-client-form-19 label{
+	/*display: none;*/
+	position:absolute; top:0; left:0;
+	color:#6a6c6e;
+	font-size:12px;
+	font-weight:normal;
+	padding: 4px 0 0 4px;
+}
+#webform-client-form-19 label span{
+	color:#6a6c6e;
+}
+#webform-client-form-19 input,
+#webform-client-form-19 textarea{
+	width:266px;
+	border-top:2px solid #c9c9c9;
+	border-left:2px solid #c9c9c9;
+	border-right:1px solid #e7e7e7;
+	border-bottom:1px solid #e7e7e7;
+	padding:3px 2px;
+	margin:0;
+	color:#6a6c6e;
+	font-size:12px;
+}
+#webform-client-form-19 input.error,
+#webform-client-form-19 textarea.error{
+	border: 1px solid red;
+	border-top:2px solid red;
+	border-left:2px solid red;
+	color: red;
+}
+#webform-client-form-19 textarea{
+	height:100px;
+}
+#form-contact-intro-text{
+	font-weight: bold;
+	font-size: 14px;
+	float:left;
+	padding:73px 0 0 135px;
+	width:590px;
+}
+#node-19 #form-contact-intro-text{
+	width:725px;
+	padding:73px 0 0 0px;
+}
+
+#form-contact-intro-text p{
+	color:#563e35;
+	font-size: 14px;
+}
+#form-contact-intro-logo{
+	float:left;
+	width:200px;
+}
+
+
+
+/* eRROR */
+div.error{
+	display: none;
+}
+
+
+/* CONTACT */
+#content-map #map {
+	
+	height:350px;
+}
+#content-map{
+	width:590px;
+	float:left;
+	
+	background-image: url(../images/back-mapcontact.png);
+	background-repeat: no-repeat;
+	padding:16px 16px 28px 16px;
+}
+
+#node-19 .content-contact{
+	float:left;
+	padding:0 0 0 18px;
+}
+
+#webform-client-form-19{
+	border:0;padding:0;margin:0;
+}
+#node-19  #webform-component-vos-coordonnees{
+	display:block;
+	width:308px;
+	background-image: url(../images/back-fieldset-contact.png);
+	background-repeat: no-repeat;
+	padding:16px 16px 20px 16px;
+	background-position: 0 0;
+	min-height:201px;
+	margin:0;
+}
+
+#node-19  #webform-component-vos-coordonnees legend{
+	color:#563e35;
+	font-weight:bold;
+	font-size:13px;
+	position:absolute;
+	padding: 0 0 5px 0;
+	display:block;
+}
+#webform-client-form-19 #webform-component-vos-coordonnees--contact-nom-prenom{
+	margin:25px 0 0 0;
+}
+
+#webform-client-form-19 #webform-component-vos-coordonnees--contact-tel-bureau,
+#webform-client-form-19 #webform-component-vos-coordonnees--contact-email,
+#webform-client-form-19 #webform-component-vos-coordonnees--contact-fax,
+#webform-client-form-19 #webform-component-vos-coordonnees--contact-telephone{
+	margin:8px 0 0 0;
+}
+
+
+ #webform-component-contact-message{
+	display:block;
+	width:308px;
+	background-image: url(../images/back-message-contact.png);
+	background-repeat: no-repeat;
+	padding:16px 16px 28px 16px;
+	background-position: 0 0;	
+	min-height:156px;
+	position:relative;
+}
+
+#webform-component-contact-message .form-textarea-wrapper{
+	padding: 18px 0 0 18px;
+	position:relative;
+}
+
+#webform-client-form-19 #edit-submit{
+	background-image: url(../images/contact-envoyer-off.png);
+	background-repeat: no-repeat;
+	background-color: transparent;
+	border:0;
+	display:block;
+	width:92px;
+	height:30px;
+	color: transparent;
+	cursor:hand;
+	text-indent:-9999px;
+	float:right;
+	margin: 0 27px 0 0;
+}
+#webform-client-form-19 #edit-submit:hover{
+	background-image: url(../images/contact-envoyer-on.png);
+}
+
+
+
+/* Debut Liste resultat */
+body, #page-wrapper{
+	margin:0;padding:0;border:0;
+	
+}
+.view-id-recherche{
+	margin:0 auto;
+	width:948px;
+}
+.view-id-recherche .view-filters{
+	background-image: url(../images/back-view-filters.png);
+	background-repeat: no-repeat;
+	top:0;
+	height:76px;
+	z-index:10px;
+	overflow: hidden;
+	margin:0 auto;	
+	position:fixed;
+	padding: 0 0 0px 0;
+	width:948px;
+ }
+
+
+
+
+.view-id-recherche .view-content{
+	margin:80px 0 0 0;
+}
+.view-id-recherche .view-content .views-row-even
+{
+	background-image: url(../images/back-views-row-even.png);
+	border-top: 1px solid #bab3a7;
+	border-bottom: 1px solid #bab3a7;
+}
+.view-id-facebookbiens .view-content .views-row-even{
+	border-top: none;
+	background-image: none;
+
+}
+.view-id-facebookbiens .view-content .views-row{
+	border-bottom: 1px solid #bab3a7;
+}
+.view-id-facebookbiens .bien-row-content-footer{
+	padding:0 0 10px 0;
+}
+
+.view-id-recherche .view-content .views-row,
+.view-id-facebookbiens .view-content .views-row
+{
+	padding:10px 0;
+}
+.view-id-recherche .view-content,
+.view-id-facebookbiens .view-content
+{
+	padding:0 16px;
+}
+
+.view-filters{
+	padding:0;
+	margin:0;
+	border:0;
+}
+#header-views-filters {
+	padding: 12px 0 0 71px
+}
+#header-views-filters p{
+	padding: 0;
+	font-style:italic;
+	
+	font-size:14px;
+}
+#header-views-filters p strong{
+	color:#494240;
+}
+#views-exposed-form-recherche-page .views-exposed-form .views-exposed-widget .form-submit{
+	 margin-top: 3px;
+}
+#views-exposed-form-recherche-page .views-submit-button input{
+	background-image: url(../images/filter.rechercher.off.png);
+	width:100px;
+	height:28px;
+	color:transparent;
+	text-indent:-9999px;
+	background-color:transparent;
+	border:none;
+	cursor:hand;
+}
+
+.views-widget div.selector select{
+	 min-width: 230px;
+}
+.views-widget div.selector{
+	 width: 230px;
+}
+.views-widget div.selector span{
+	width: 200px;
+}
+
+.node-type-album #block-system-main{
+	float:left;
+}
+
+.node-type-bien #block-views-slide-block,
+#block-views-slidealbum-block{
+	width:500px;
+	float:left;
+}
+.node-type-bien #block-system-main{
+	width:480px;
+	float:left;
+}
+.views-exposed-widgets {
+	padding: 0 0 0 68px;
+}
+.views-widget-sort-by,
+#views-exposed-form-recherche-page label
+,.views-widget-sort-order
+{
+	display:none;
+}
+
+#edit-field-bien-taxo-tid-wrapper,
+#edit-field-bien-fourchetteprix-tid-wrapper,
+#edit-field-bien-sort-price
+{
+	margin:3px 0 0 0;
+}
+.views-exposed-form .views-exposed-widget{
+	padding:0;
+}
+
+.bien-row-image{
+	float:left;
+	width:288px;
+}
+
+.bien-row-image{
+	float:left;
+	width:268px;
+	background-image: url(../images/back-bien-row-image.png);
+
+	background-repeat: no-repeat;
+	padding:9px 10px 16px 10px;
+
+}
+
+.bien-row-content{
+	float:left;
+	width:618px;
+	padding: 0 10px 0 0;
+}
+/* .bien-row-content-header */
+.bien-row-content-header .bien-row-content-header-ref{
+	float:left;
+}
+
+.view-content h2{
+	float:left;
+	padding:0;
+	margin:0;
+	border:0;
+}
+.view-content h2 span{
+	display:block;
+	padding:0;
+	margin:0;
+	border:0;
+}
+
+.view-content h2 a{
+	color: #563e35;
+	text-decoration: none;
+	font-family: Arial;
+	font-size:16px;
+	padding:0;
+	margin:0;
+	border:0;
+}
+
+.bien-row-content-header-ref{
+	
+	background-image: url(../images/bien-ref-left.png);
+	background-repeat: no-repeat;
+	padding:0 0 0 7px;
+	margin:5px 5px 0  0;
+}
+.bien-row-content-header-ref .field-content{
+	color:#fff;	
+	background-image: url(../images/bien-ref-right.png);
+	background-repeat: no-repeat;
+	background-position: top right;
+	height:30px;
+	padding: 5px 10px 0 4px;
+	font-size:13px;
+}
+
+.bien-row-content-content .item-list{
+	padding: 4px 0 10px 0;
+}
+.bien-row-content-content .item-list ul{
+	list-style-type:none;
+	margin:0;
+	padding:0 0 10px 0;
+}
+.bien-row-content-content .item-list ul li{
+	float:left;
+	background-image: url(../images/bien-puce.gif);
+	background-repeat: no-repeat;
+	background-position: 0 3px;
+	margin:0;
+	padding:0 30px 0 12px;
+	color:#654832;
+	font-size:12px;
+}
+
+.bien-row-content-resume{
+	clear:both;
+	color:#6a6c6e;
+	font-size:13px;
+	padding: 4px 0 0 0;
+}
+.bien-row-content-footer{
+	padding:20px 0 0 0;
+}
+.bien-row-content-footer .bien-row-content-footer-prix{
+	color:#593e34;
+	font-size:18px
+	font-weight:bold;
+}
+.bien-row-content-footer .bien-row-content-footer-prix .field-content{
+	font-weight:bold;
+}
+.bien-row-content-footer .bien-row-content-footer-link{
+	float:right;	
+}
+.bien-row-content-footer .bien-row-content-footer-link a{
+	color:#5f5755;
+	text-decoration:none;
+	background-image: url(http://www.loireetcharme.com/sites/all/themes/loireetcharme/images/bien-loupe-off.png);
+	background-repeat: no-repeat;
+	padding:2px 0 6px 27px;
+	font-size:12px;
+}
+.bien-row-content-footer .bien-row-content-footer-link a:hover{
+	background-image: url(http://www.loireetcharme.com/sites/all/themes/loireetcharme/images/bien-loupe-off.png);
+	color:#926c60;
+}
+
+/* fin Liste resultat */
+
+
+/* Debut Galleria surcharge */
+.view-id-slide,
+.view-id-slidealbum{
+	width:482px;
+	background-image: url(../images/back-galleria.png);
+	background-repeat: no-repeat;
+	padding:1px;
+
+}
+.view-id-slide .view-content,
+.view-id-slidealbum .view-content
+{
+	min-height:428px;
+}
+
+.galleria-container{
+	background-color: #fff;	
+}
+.galleria-thumbnails-list{
+	padding: 0 5px; 
+}
+
+/* Fin Galleria surcharge */
+
+
+/* Debut fiche bien */
+
+#header-bien{
+	padding: 10px 0;
+}
+#header-bien-retour{
+	float:left;
+	width:500px;
+	padding:5px 0 0 0;
+}
+#header-bien-retour a{
+	text-transform:uppercase;
+	color:#563e35;
+	text-decoration:none;
+	background-image: url(../images/back-button-retourbien.png);
+	background-repeat: no-repeat;
+	padding: 5px 0 5px 20px;
+}
+#header-bien-retour a:hover{
+	text-decoration:underline;
+}
+
+#header-bien-retour a.print{
+	display:block;
+	float:right;
+	background-image: url(../images/bien-print-off.png);
+	background-repeat: no-repeat;
+	color:transparent;
+	text-indent:-9999px;
+	margin: 0 20px 0 0;
+	width:30px;
+	height:27px;
+}
+
+#header-bien-prix {
+	background-image: url(../images/bien-price-left.gif);
+	background-repeat: no-repeat;
+	padding: 0 0 0 2px;
+	float:left;
+}
+#header-bien-prix span{
+	display:block;
+	background-image: url(../images/bien-price-right.gif);
+	background-repeat: no-repeat;
+	background-position: top right;
+	padding:8px ;
+	color:#fff;
+	font-weight:bold;
+	font-size:17px;
+}
+#header-node-bien #bien-reference{
+	float:left;
+}
+#header-node-bien h1{
+	float:left;
+	margin: 0;
+	padding: 0 0 0 5px;
+}
+#header-node-bien #bien-reference{
+	background-image: url(../images/bien-ref-left.png);
+	background-repeat: no-repeat;
+	padding: 0 0 0 7px;
+	margin:2px 0 0 0;
+}
+#header-node-bien #bien-reference span{
+	background-image: url(../images/bien-ref-right.png);
+	background-repeat: no-repeat;
+	background-position: top right;
+	padding:4px 8px 8px 1px ;
+	color:#fff;
+	font-weight:bold;
+	font-size:15px;
+	float:left;
+	display:block;
+	/*font-family: 'ArimoRegular';*/
+}
+#header-node-bien #bien-reference span div.field-name-field-bien-reference{
+	float:right;
+}
+
+#header-node-bien #bien-reference span *{
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+#header-node-bien{
+	padding: 0 0 10px 0;
+}
+
+/* boutons */
+#bien-logolc {
+	float:left;
+}
+#bien-buttons{
+	float:left;
+	text-align:right;
+	width:260px;
+}
+#bien-buttons a{
+	color:transparent;
+	text-indent:-9999px;
+	display:block;
+	background-repeat: no-repeat;
+	height:35px;
+	float:right;
+}
+
+#bien-buttons a.demandeinfo{
+	background-image: url(../images/bien-demandeinfo-off.png);
+	width: 168px;
+}
+#bien-buttons a.demandeinfo:hover{
+	background-image: url(../images/bien-demandeinfo-on.png);
+}
+
+#bien-buttons a.sendtofriend{
+	background-image: url(../images/bien-sendto-off.png);
+	width: 168px;
+}
+#bien-buttons a.sendtofriend:hover{
+	background-image: url(../images/bien-sendto-on.png);
+}
+#bien-buttons a.sharefb{
+	background-image: url(../images/bien-facebook-off.png);
+	width: 110px;
+}
+#bien-buttons a.sharefb:hover{
+	background-image: url(../images/bien-facebook-on.png);
+}
+
+#bien-bilanenergie-header{
+	margin-top:8px;
+}
+
+#bien-bilanenergie{
+	height:260px;
+}
+#bien-bilanenergie-text{
+	/*padding:406px 0 0 0;*/
+}
+#bien-bilanenergie-image{
+	z-index:10px;
+	position: absolute;
+	
+}
+#bien-bilanenergie-value{
+	position: absolute;
+	z-index: -1px;
+	text-align:right;
+	width:263px;
+	color:#fff;
+}
+#bien-bilanenergie-value .field-name-field-bien-bilanenergie{
+	background-image: url(../images/bien-bilan-fleche.png);
+	height:22px;
+}
+#bien-bilanenergie-value .field-name-field-bien-bilanenergie .field-item{
+	padding: 1px 5px 0 0;
+	font-size:16px;
+}
+#bien-bilanenergie-value.bilan-a {
+	margin:21px 0 0 0;
+}
+#bien-bilanenergie-value.bilan-b {
+	margin:51px 0 0 0;
+}
+#bien-bilanenergie-value.bilan-c {
+	margin:82px 0 0 0;
+}
+#bien-bilanenergie-value.bilan-d {
+	padding:113px 0 0 0;
+}
+#bien-bilanenergie-value.bilan-e {
+	margin:144px 0 0 0;
+}
+#bien-bilanenergie-value.bilan-f {
+	margin:174px 0 0 0;
+}
+#bien-bilanenergie-value.bilan-g {
+	margin:205px 0 0 0;
+}
+
+/* Fin fiche bien */
+
+
+/* debut form demande */
+#content-formdemande-form *{
+	padding:0;
+	margin:0;
+	border:0;
+}
+
+#content-formdemande-form legend{
+	position:absolute;
+	padding:10px 10px 10px 19px;
+	color:#563e35;
+	font-weight:bold;
+	font-size:12px;
+}
+
+#content-formdemande-visuel{
+	float:left;
+	width:316px;
+	height:397px;
+	background-image: url(../images/back-content-formdemande-visuel.png);
+	background-repeat: no-repeat;
+}
+#content-formdemande-visuel span{
+	display:block;
+	padding:16px 0 0 16px;
+}
+
+#content-formdemande-form{
+	float:left;
+	width:634px;
+}
+#webform-client-form-5 input,
+#webform-client-form-5 textarea,
+#webform-client-form-25 fieldset input,
+#webform-component-acquereur-commentaires textarea
+{
+	width:266px;
+	border-top:2px solid #c9c9c9;
+	border-left:2px solid #c9c9c9;
+	border-right:1px solid #e7e7e7;
+	border-bottom:1px solid #e7e7e7;
+	padding:3px 2px;
+	margin:0;
+	color:#6a6c6e;
+	font-size:12px;
+}
+#webform-client-form-5 input.error,
+#webform-client-form-5 textarea.error,
+#webform-client-form-25 fieldset input.error,
+#webform-component-acquereur-commentaires textarea.error
+{
+	border-top:2px solid red;
+	border-left:2px solid red;
+	border-right:1px solid red;
+	border-bottom:1px solid red;
+	color:red;
+}
+
+
+#webform-client-form-5 textarea,
+#webform-component-acquereur-commentaires textarea{
+	width:590px;
+	height:104px;
+	resize: none;
+}
+
+#webform-client-form-5 input:focus,
+#webform-client-form-5 textarea:focus,
+#webform-client-form-25 fieldset input:focus,
+#webform-client-form-25 fieldset textarea:focus
+{
+	background-color:#e8e8e8;
+}
+#webform-client-form-5 label{
+	/*display:none;*/
+	position:absolute; top:0; left:0;
+	color:#6a6c6e;
+	font-size:12px;
+	font-weight:normal;
+	padding: 4px 0 0 4px;
+}
+#webform-client-form-5 label span{
+	color:#6a6c6e;
+}
+#webform-client-form-5 .form-item {
+	position:relative;
+}
+#webform-client-form-5 #webform-component-vos-coordonnees{
+	display:block;
+	float:left;
+	width:321px;
+	background-image: url(../images/back-webform-demande-fieldset.png);
+	background-repeat: no-repeat;
+}
+
+#webform-client-form-5 #webform-component-bien-a-vendre-ou-a-estimer{
+	background-image: url(../images/back-webform-demande-fieldset.png);
+	background-repeat: no-repeat;
+}
+#webform-client-form-5 #webform-component-vos-coordonnees .fieldset-wrapper,
+#webform-client-form-5 #webform-component-bien-a-vendre-ou-a-estimer .fieldset-wrapper
+{
+	padding:47px 0 34px 19px;
+}
+#webform-client-form-5 #webform-component-vos-coordonnees .fieldset-wrapper .form-item,
+#webform-client-form-5 #webform-component-bien-a-vendre-ou-a-estimer .fieldset-wrapper .form-item
+{
+	padding:0 0 7px 0;
+}
+
+#webform-client-form-5 #webform-component-commentaires{
+	background-image: url(../images/back-webform-demande-commentaires.png);
+	background-repeat: no-repeat;	
+	min-height:145px;
+	padding:16px 0 0 16px;
+}
+#webform-client-form-5 #edit-actions #edit-submit,
+#webform-client-form-25 #edit-actions #edit-submit,
+#webform-client-form-25 #edit-actions--2 #edit-submit--2,
+#webform-client-form-19 #edit-actions--3 #edit-submit--3{
+	display:block;
+	float:right;
+	margin: 0 3px 0 0;
+	background-image: url(../images/contact-envoyer-off.png);
+	background-repeat: no-repeat;
+	background-color: transparent;
+	border:0;
+	width:92px;
+	height:30px;
+	color: transparent;
+	cursor:hand;
+	text-indent:-9999px;
+}
+
+#fb-form-vendeur-form #webform-client-form-5 #edit-actions #edit-submit {
+/*
+border: 1px solid red;
+*/
+margin-right: 5px;
+margin-top: -10px;
+}
+
+#fb-form-vendeur-form #form-obligatoire {
+margin-top: -12px;
+}
+
+#webform-client-form-5 #edit-actions #edit-submit:hover,
+#webform-client-form-25 #edit-actions #edit-submit:hover,
+#webform-client-form-25 #edit-actions--2 #edit-submit--2:hover,
+#webform-client-form-19 #edit-actions--3 #edit-submit--3:hover
+{
+	background-image: url(../images/contact-envoyer-on.png);
+}
+#webform-client-form-25 fieldset label,
+#webform-client-form-25 #webform-component-acquereur-commentaires label{
+	/* display:none; */
+	position:absolute; top:0; left:0;
+	color:#6a6c6e;
+	font-size:12px;
+	font-weight:normal;
+	padding: 4px 0 0 4px;
+}
+#webform-client-form-25 fieldset .form-item,
+#webform-client-form-25 #webform-component-acquereur-commentaires .form-item{
+	position:relative;
+}
+
+#webform-client-form-25 fieldset label span,
+#webform-client-form-25 #webform-component-acquereur-commentaires label span{
+	color:#6a6c6e;
+}
+#webform-client-form-25 input{}
+
+
+#webform-component-acquereur-vos-coordonnees--acquereur-nom,
+#webform-component-acquereur-vos-coordonnees--acquereur-telephone,
+#webform-component-acquereur-vos-coordonnees--acquereur-tel-bureau,
+#webform-component-acquereur-vos-coordonnees--acquereur-email,
+#webform-component-acquereur-vos-coordonnees--acquereur-fax{
+	clear:left;
+	float:left;
+	width:312px;
+	padding: 0 0 7px 0;
+}
+#webform-component-acquereur-vos-coordonnees--acquereur-prenom,
+#webform-component-acquereur-vos-coordonnees--acquereur-adresse,
+#webform-component-acquereur-vos-coordonnees--acquereur-code-postal,
+#webform-component-acquereur-vos-coordonnees--acquereur-ville,
+#webform-component-acquereur-vos-coordonnees--acquereur-pays{
+	float:left;
+}
+
+#webform-client-form-25 #webform-component-acquereur-vos-coordonnees{
+	background-image: url(../images/back-acquereur-vos-coordonnees.png);
+	background-repeat: no-repeat;
+	width:629px;
+	height:234px;
+	
+}
+#webform-client-form-25 #webform-component-acquereur-vos-coordonnees .fieldset-wrapper{
+	padding: 47px 0 0 19px;
+}
+
+#webform-component-acquereur-situation{
+	width:145px;
+	float:left;
+	margin: 0 0 0 19px;
+}
+#webform-component-acquereur-architecture{
+	width:160px;
+	float:left;
+}
+#webform-component-acquereur-etat-des-batiments{
+	width:150px;
+	float:left;
+}
+#webform-component-acquereur-surface-hab{
+	width:160px;
+	float:left;
+}
+
+#webform-component-acquereur-situation .form-item label,
+#webform-component-acquereur-architecture .form-item label,
+#webform-component-acquereur-etat-des-batiments .form-item label{
+	font-size:12px;
+	color:#6a6c6e;
+	font-weight:normal;
+}
+#webform-component-acquereur-situation label,
+#webform-component-acquereur-architecture label,
+#webform-component-acquereur-etat-des-batiments label,
+#webform-component-acquereur-surface-hab label,
+#webform-component-acquereur-surface-du-terrain label,
+#webform-component-acquereur-budget-ideal label,
+#webform-component-acquereur-budget-maxi label,
+#webform-component-acquereur-budget-maxi .field-suffix,
+#webform-component-acquereur-budget-ideal  .field-suffix
+{
+	font-size:13px;
+	color:#563e35;
+	font-weight:bold;
+}
+
+#webform-component-acquereur-surface-hab .description,
+#webform-component-acquereur-surface-du-terrain .description,
+#page-wrapper .content #form-obligatoire p
+{
+	color:#6a6c6e;
+	font-size:10px;
+	font-style:italic;
+	font-weight:normal;
+}
+#form-obligatoire{
+	float:left;
+}
+
+
+#webform-component-acquereur-surface-hab input,
+#webform-component-acquereur-surface-du-terrain input,
+#webform-component-acquereur-budget-ideal input,
+#webform-component-acquereur-budget-maxi input
+{
+	width:62px;
+	border-top:2px solid #c9c9c9;
+	border-left:2px solid #c9c9c9;
+	border-right:1px solid #e7e7e7;
+	border-bottom:1px solid #e7e7e7;
+	padding:3px 2px;
+	margin:0;
+	color:#6a6c6e;
+	font-size:12px;
+}
+
+
+
+#webform-component-acquereur-budget-ideal{
+	clear:left;
+	float:left;
+	background-color:#dad6d1;
+	padding:5px 25px 5px 10px;
+	margin:5px 0 15px 19px;
+
+}
+#webform-component-acquereur-budget-maxi{
+	float:left;
+	background-color:#dad6d1;
+	padding:5px 25px 5px 10px;
+	margin-top:5px;
+}
+#webform-component-acquereur-surface-du-terrain{
+	/*position: absolute;*/
+	width:160px;
+	float:left;
+	padding: 20px 0 0 0px;
+	/*border: 1px solid red;*/
+	
+}
+
+#fb-form-aquereur #webform-component-acquereur-surface-du-terrain{
+	position: absolute;
+	width:160px;
+	/*float:left;*/
+	padding: 20px 0 0 0px;
+	top: 610px;
+	left: 505px;
+}
+
+
+#webform-component-acquereur-commentaires{
+	clear:left;
+	background-image: url(../images/back-webform-demande-commentaires.png);
+	background-repeat: no-repeat;
+	padding:16px 0 0 19px;
+	min-height:145px;
+}
+
+/*.clientside-error{display:none;}*/
+#clientsidevalidation-webform-client-form-25-errors{
+	display:none;
+}
+#clientsidevalidation-webform-client-form-19-errors{
+	display:none;
+	position:absolute;
+	width:1px;
+	height:1px;
+	/*top:-9999px;
+	right:-9999px;*/
+}
+/* fin form demande */
+
+
+/* forward*/
+#content #forward-visuel{
+	float:left;
+	width:316px;
+	height:397px;
+	background-image: url(../images/back-content-formdemande-visuel.png);
+	background-repeat: no-repeat;	
+}
+#content #forward-visuel span{
+	display:block;
+	padding:16px 0 0 16px;
+
+}
+
+.page-forward  #content .region-content{
+	float:left;
+}
+
+.page-forward  #content .region-content textarea{
+	width:288px;
+	border-top:2px solid #c9c9c9;
+	border-left:2px solid #c9c9c9;
+	border-right:1px solid #e7e7e7;
+	border-bottom:1px solid #e7e7e7;
+	padding:3px 2px;
+	margin:0;
+	color:#6a6c6e;
+	font-size:12px;
+	height:120px;
+}
+
+.page-forward  #content .region-content .grippie{
+	display:none;
+}
+
+.page-forward .region {
+	border:0;
+	margin:0;
+	padding:0;
+
+}
+.page-forward #block-system-main .content{
+	background-image: url(../images/back-forward.png);
+	background-repeat: no-repeat;	
+	width:285px;
+	padding:20px 20px 0 20px;
+	min-height:460px;
+}
+.page-forward #block-system-main .content input{
+	width:280px;
+	border-top:2px solid #c9c9c9;
+	border-left:2px solid #c9c9c9;
+	border-right:1px solid #e7e7e7;
+	border-bottom:1px solid #e7e7e7;
+	padding:3px 2px;
+	margin:0;
+	color:#6a6c6e;
+	font-size:12px;
+}
+.page-forward  #content .region-content textarea.error,
+.page-forward #block-system-main .content input.error{
+	border-top:2px solid red;
+	border-left:2px solid red;
+	border-right:1px solid red;
+	border-bottom:1px solid red;
+}
+
+.page-forward #block-system-main .content label{
+	font-size:12px;
+	color:#6a6c6e;
+	padding: 3px 0 0 3px;
+	font-weight:normal;
+}
+.page-forward #block-system-main .content label span{
+	color:#6a6c6e;
+	font-weight:normal;
+}
+.page-forward #block-system-main .content .description{
+	font-size:11px;
+	font-style:italic;
+	color:#6a6c6e;
+}
+.page-forward #block-system-main .content #edit-page label,
+.page-forward #block-system-main .content #edit-subject label,
+.page-forward #block-system-main .content #edit-body label
+{
+	color:#563e35;
+	font-size:13px;
+	font-weight:bold;
+}
+
+.page-forward #block-system-main .content #edit-page a,
+.page-forward #block-system-main .content #edit-subject ,
+.page-forward #block-system-main .content #edit-body 
+{
+	color:#6a6c6e;
+	font-size:13px;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+.page-forward #block-system-main .content #edit-submit{
+	background-image: url(../images/contact-envoyer-off.png);
+	background-repeat: no-repeat;
+	background-color: transparent;
+	border:0;
+	display:block;
+	width:92px;
+	height:30px;
+	color: transparent;
+	cursor:hand;
+	text-indent:-9999px;
+	float:right;
+	margin: 0 27px 0 0;
+}
+.page-forward #block-system-main .content #edit-submit:hover{
+	background-image: url(../images/contact-envoyer-on.png);
+}
+
+
+.page-user #main #content .section{
+	background-color: #FFF;
+	padding:10px;
+}
+.page-user #main #content .section #edit-submit{
+	background-color: #5f5755;
+	color:#fff;
+	padding:2px 5px;
+	border:none;
+}
+.page-user #main #content .section #edit-submit:hover{
+	background-color: #a0938b;
+}
+
+/* DEBUT FACEBOOK PAGE */
+.node-type-facebook{
+	/*background-image: url(../images/fb-back-body.png);*/
+	/*background-repeat: no-repeat;	*/
+	background: transparent;
+
+}
+#fb-conteneur{
+	width:780px;
+	background-image: url(http://www.loireetcharme.com/sites/all/themes/loireetcharme/images/fond_FB_LoireCharme.jpg);
+	background-repeat: no-repeat;
+	height: 780px;
+	margin-top: 14px;
+	margin-left: 5px;
+	/*overflow-x : hidden;*/
+	/*border: 1px solid red;*/
+}
+.fb-fond-image  {
+	background-image: url(http://www.loireetcharme.com/sites/all/themes/loireetcharme/images/frontfdimage.gif);
+	background-repeat: no-repeat;
+	padding:11px 12px 12px 12px;
+	margin: 0 0 0 -20px;
+	width: 722px;
+}
+
+.fb-shadow-right {
+	position: absolute;
+	width: 8px;
+	height: 273px;
+	top: 25px;
+	margin-left: 701px;
+	background-color: rgba(75,68,65, 0.14);
+}
+.fb-shadow-below {
+	position: absolute;
+	width: 717px;
+	height: 6px;
+	top: 298px;
+	margin-left:-8px;
+	background-color: rgba(75,68,65, 0.14);
+}
+
+
+#fb-menu ul{
+	list-style-type:none;
+	position: absolute;
+}
+#fb-menu ul,
+#fb-menu ul li{
+	padding:0;
+	margin:0;
+	
+}
+#fb-menu {
+	height:50px;
+	/*padding:0 0 20px 14px;*/
+	padding-top:78px;
+	margin-left: 237px;
+	margin-bottom: 00px;
+}
+#fb-menu ul li {
+	display:block;
+	float:left;
+	position: relative;
+}
+#fb-menu ul li a{
+	display:block;
+	height: 14px;
+	padding:2px;
+	text-decoration:none;
+	font-size:11px;
+	text-transform:uppercase;
+	color:#d1c6ba;
+	font-family: Arial, Sans-serif;
+	font-weight:bold;
+}
+#fb-menu ul li ul{
+	display:none;
+}
+#fb-menu ul li:hover ul{
+	display:block;
+	z-index:100;
+}
+#fb-menu ul li ul li{
+	display:none;
+	float:none;
+}
+	
+#fb-menu #mlagence,
+#fb-menu #mnosbiens
+{
+	padding:7px 14px 7px 14px;
+	/*padding-left: 10px;
+	padding-right: 10px;*/
+}
+
+#fb-menu #mdemandes{
+	padding:7px 16px 7px 15px;
+}
+
+#fb-menu ul li:hover ul,
+#fb-menu ul li:hover ul li,
+#fb-menu ul li:hover ul li a{
+	width:155px;	
+}
+
+
+#fb-menu ul li ul li a{
+	padding: 5px 8px;
+	font-weight:normal;
+}
+
+
+#fb-menu ul li a{
+	display:block;
+	background-repeat: no-repeat;
+	background-color:#5f5755;
+}
+#fb-menu ul li a:hover,
+#fb-menu ul li a.active{
+	background-color:#a59991;
+	color:#fff;
+}
+#fb-menu ul li:hover ul li{
+	display:block;
+	background-color:#ddd;;
+}
+
+#fb-menu ul #mcontact {
+	background-image: url(http://www.loireetcharme.com/sites/all/themes/loireetcharme/images/fb-menu-contact-off.png);
+	display:block;
+	color: transparent;
+	text-indent:-9999px;
+	width:42px;
+	background-color:transparent;
+	margin: 0 0 0 4px;
+	height:27px;
+	
+}
+#fb-menu ul #mcontact:hover,
+#fb-menu ul #mcontact.active{
+	background-image: url(http://www.loireetcharme.com/sites/all/themes/loireetcharme/images/fb-menu-contact-on.png);
+}
+
+#fb-menu ul #msiteweb {
+	background-image: url(http://www.loireetcharme.com/sites/all/themes/loireetcharme/images/fb-menu-site-off.png);
+	display:block;
+	color: transparent;
+	text-indent:-9999px;
+	width:27px;
+	background-color:transparent;
+	height:27px;
+	
+}
+#fb-menu ul #msiteweb:hover{
+	background-image: url(http://www.loireetcharme.com/sites/all/themes/loireetcharme/images/fb-menu-site-on.png);
+}
+#fb-menu ul #mfacebook {
+	background-image: url(http://www.loireetcharme.com/sites/all/themes/loireetcharme/images/fb-menu-facebook-off.png);
+	display:block;
+	color: transparent;
+	text-indent:-9999px;
+	width:27px;
+	background-color:transparent;
+	height:27px;
+	
+}
+#fb-menu ul #mfacebook:hover{
+	background-image: url(http://www.loireetcharme.com/sites/all/themes/loireetcharme/images/fb-menu-facebook-on.png);
+}
+
+
+
+/* FB caroussel */
+#fb-accueil-caroussel{
+	width:700px;
+	height:385px;
+	padding:14px 0 0 13px;
+	/*background-image: url(../images/fb-back-caroussel.png);*/
+	background-repeat: no-repeat;
+	margin: auto;
+	/*margin-left: 36px;*/
+}
+#fb-accueil-caroussel .field-item{
+	position:absolute;
+}
+
+
+/* FORM VENDEUR */
+
+#fb-accueil{
+	position: absolute;
+	/*width:509px;*/
+	width: 780px;
+	/*background: none;*/
+	
+}
+#fb-accueil-content{
+	padding:0 10px 0 40px;
+	font-size:12px;
+	color:#686768;
+	margin-left: 200px;
+	margin-top: -90px;
+	width:468px;
+	text-align : justify;
+	/*background: transparent;*/
+}
+
+#fb-form-vendeur{
+	/*display:none;*/
+	/*background-color:#FFFFFF;*/
+	/*background-image: url(../images/fond_FB_LoireCharme.jpg);*/
+	position: absolute;
+	width:780px;
+	padding: 0 0 0 12px;
+}
+#fb-form-vendeur #webform-client-form-5 #webform-component-vos-coordonnees {
+	/*width:227px;*/
+	width:257px;
+	margin: auto;
+}
+
+#fb-form-vendeur #webform-component-vos-coordonnees
+{
+	background-image: url("http://www.loireetcharme.com/sites/all/themes/loireetcharme/images/fb-back-vendeur-form.png");
+	min-height:220px;
+}
+#fb-form-vendeur #webform-component-bien-a-vendre-ou-a-estimer{
+	background-image: url("http://www.loireetcharme.com/sites/all/themes/loireetcharme/images/fb-back-vendeur-form.png");
+	min-height:220px;
+}
+
+#fb-form-vendeur #webform-component-vos-coordonnees *,
+#fb-form-vendeur #webform-component-bien-a-vendre-ou-a-estimer *{
+	padding:0;
+	margin:0;
+}
+#fb-form-vendeur #webform-component-vos-coordonnees legend,
+#fb-form-vendeur #webform-component-bien-a-vendre-ou-a-estimer legend{
+	position:absolute;
+	color:#563e35;
+	font-weight: bold;
+	padding: 0 0 0 5px;
+	font-size:12px;
+
+}
+#fb-form-vendeur #webform-component-vos-coordonnees .form-item,
+#fb-form-vendeur #webform-component-bien-a-vendre-ou-a-estimer .form-item
+{
+	padding: 5px 0 5px 0;
+	margin: 0 0 5px 0;
+}
+#fb-form-vendeur #webform-component-vos-coordonnees .fieldset-wrapper,
+#fb-form-vendeur #webform-component-bien-a-vendre-ou-a-estimer .fieldset-wrapper{
+padding: 30px 0 5px 5px;
+}
+#fb-form-vendeur #webform-component-vos-coordonnees input,
+#fb-form-vendeur #webform-component-bien-a-vendre-ou-a-estimer input
+{
+	width:194px;
+	padding:2px;
+}
+
+#fb-form-vendeur .edit-submit {
+	margin-right: 5px;
+	border: 1px solid red;
+}
+#fb-form-vendeur #webform-component-vos-coordonnees label,
+#fb-form-vendeur #webform-component-bien-a-vendre-ou-a-estimer label
+{
+	padding:3px;
+}
+#fb-form-vendeur #webform-client-form-5 #webform-component-commentaires {
+	background-image: url("http://www.loireetcharme.com/sites/all/themes/loireetcharme/images/fb-back-vendeurcomm-form.png");
+	position:relative;
+}
+
+#fb-form-vendeur #webform-client-form-5 textarea{
+	width:470px;
+	resize: none;
+}
+
+/******************************************************************************************/
+/******************************************************************************************/
+#fb-form-aquereur{
+	padding:0 0 0 12px;
+}
+#fb-form-aquereur #webform-client-form-25 #webform-component-acquereur-vos-coordonnees{
+	background-image: url("http://www.loireetcharme.com/sites/all/themes/loireetcharme/images/fb-back-aquereur-form.png");
+	width:500px;
+	min-height:210px;
+	margin:0;
+}
+#fb-form-aquereur #webform-component-acquereur-budget-ideal,
+#fb-form-aquereur #webform-component-acquereur-budget-maxi{
+	margin:20px 0 8px 0;
+}
+#fb-form-aquereur #webform-component-acquereur-budget-ideal{
+	width:215px;
+}
+#fb-form-aquereur #webform-component-acquereur-budget-maxi{
+	width:220px;
+}
+
+#fb-form-aquereur #webform-client-form-25 fieldset input{
+	 width: 214px;
+}
+
+#fb-form-aquereur #form-obligatoire {
+	margin-top: -12px;
+}
+
+#fb-form-aquereur #webform-component-acquereur-commentaires label
+{
+position:absolute; top:0; left:0;
+z-index: 10;
+	color:#6a6c6e;
+	font-size:12px;
+	font-weight:normal;
+	padding: 21px 0 0 25px;
+}
+
+#fb-form-aquereur #webform-component-acquereur-commentaires textarea{
+width: 470px;
+resize: none;
+}
+
+#fb-form-aquereur #webform-component-acquereur-commentaires {
+    background-image: url("http://www.loireetcharme.com/sites/all/themes/loireetcharme/images/fb-back-vendeurcomm-form.png");
+}
+
+
+#fb-form-aquereur #webform-component-acquereur-vos-coordonnees--acquereur-nom, 
+#fb-form-aquereur #webform-component-acquereur-vos-coordonnees--acquereur-telephone, 
+#fb-form-aquereur #webform-component-acquereur-vos-coordonnees--acquereur-tel-bureau, 
+#fb-form-aquereur #webform-component-acquereur-vos-coordonnees--acquereur-email, 
+#fb-form-aquereur #webform-component-acquereur-vos-coordonnees--acquereur-fax {
+
+    width: 240px;
+}
+#fb-form-aquereur #webform-component-acquereur-commentaires,
+#fb-form-aquereur #webform-component-acquereur-commentaires .form-textarea-wrapper{
+	position:relative;
+}
+#fb-form-aquereur #webform-component-acquereur-vos-coordonnees legend{
+	position:absolute;
+	padding: 0 0 0 12px;
+	color: #563E35;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#fb-form-aquereur #webform-component-acquereur-vos-coordonnees .form-item{
+	padding:0 0 10px 0; 
+	margin:0;
+}
+
+#fb-form-aquereur #webform-client-form-25 #webform-component-acquereur-vos-coordonnees .fieldset-wrapper{
+	padding: 30px 0 0 12px;
+}
+
+#fb-form-aquereur #webform-component-acquereur-situation,
+#fb-form-aquereur #webform-component-acquereur-etat-des-batiments{
+	/*width:245px;*/
+	width:342px;
+}
+#fb-form-aquereur #webform-component-acquereur-architecture{
+	width:212px;
+	padding:0;
+	margin:0;
+}
+#fb-form-aquereur #webform-component-acquereur-architecture .form-item,
+#fb-form-aquereur #webform-component-acquereur-situation .form-item,
+#fb-form-aquereur #webform-component-acquereur-etat-des-batiments .form-item,
+#fb-form-aquereur #webform-component-acquereur-surface-hab
+{
+	margin:0;
+}
+
+#fb-form-aquereur #webform-component-acquereur-surface-hab{
+	padding:10px 0 0 5px;
+}
+
+
+#fb-form-aquereur #webform-component-acquereur-etat-des-batiments{
+	padding: 0 0 0 12px;
+}
+
+#fb-form-aquereur #webform-component-acquereur-surface-du-terrain{
+	padding: 0 0 0 5px;
+}
+#fb-form-aquereur #webform-component-acquereur-surface-du-terrain{
+	margin:0;
+}
+#fb-form-aquereur{
+	/*display:none;*/
+	/*position: absolute;*/
+	/*background-color:#FFFFFF;*/
+	/*background-image: url(../images/fond_FB_LoireCharme.jpg);*/
+	width:520px;
+	margin:auto;
+}
+
+#fb-form-aquereur #webform-client-form-25 #edit-submit--2 {
+	margin-right: 88px;
+	margin-top: -12px;
+}
+
+/******************************************************************************************/
+
+/******************************************************************************************/
+/******************************************************************************************/
+#fb-form-contact{
+	padding: 0 0 0 14px;
+}
+#fb-form-contact #webform-client-form-19 #webform-component-vos-coordonnees{
+	background-image: url("http://www.loireetcharme.com/sites/all/themes/loireetcharme/images/fb-back-contact1.png");
+	width:220px;
+	background-repeat: no-repeat;
+	min-height:220px;
+	float:left;
+	padding: 0 0 0 15px;
+}
+#fb-form-contact #webform-client-form-19 #webform-component-vos-coordonnees legend{
+	position:absolute;
+	color:#563e35;
+	font-weight:bold;
+	font-size:12px;
+	padding: 10px 0 0 0;
+
+}
+#fb-form-contact #webform-client-form-19 #webform-component-vos-coordonnees .form-item{
+
+}
+#fb-form-contact #webform-client-form-19 #webform-component-vos-coordonnees .fieldset-wrapper{
+	padding: 10px 0 0 0;
+
+}
+#fb-form-contact #webform-client-form-19 #webform-component-contact-message{
+	background-image: url("http://www.loireetcharme.com/sites/all/themes/loireetcharme/images/fb-back-contact1.png");
+	width:230px;
+	float:left;
+	min-height:220px;
+	margin-left:10px;
+}
+#fb-form-contact #webform-client-form-19 input{
+	width:194px;
+}
+#fb-form-contact #webform-client-form-19 textarea{
+	width:190px;
+	height:184px;
+	resize: none;
+}
+#fb-form-contact-form{
+	position:relative;
+	min-height:340px;
+	width: 520px;
+	/*margin:auto;*/
+	margin-left: 128px;
+}
+
+#fb-form-contact-form #webform-component-vos-coordonnees {
+	margin-right: 30px;
+}
+
+#fb-map-container{
+	background-image: url("http://www.loireetcharme.com/sites/all/themes/loireetcharme/images/fb-back-map.png");
+	background-repeat:no-repeat;
+	padding:10px 0 0 10px;
+	min-height:380px;
+	width:500px;
+	/*margin:auto;*/
+	margin-left: 129px;
+	margin-top: -35px;
+
+}
+#fb-map-container #map{
+	width: 470px;
+	height:346px;
+}
+
+#fb-form-vendeur-form {
+	width: 517px;
+	margin-left:126px;
+
+}
+
+#fb-form-aquereur-form {
+	width: 600px;
+	margin: auto;
+}
+
+#fb-conteneur #fb-form-vendeur-form p,
+#fb-conteneur #fb-form-aquereur-form p,
+#fb-conteneur #fb-form-contact-form p {
+	font-size:12px;
+	font-weight:bold;
+	color:#563e35;
+}
+
+#fb-conteneur #edit-actions--3, #fb-conteneur #edit-actions--2, #fb-conteneur #edit-actions{
+	clear:left;
+}
+
+
+#fb-conteneur #webform-client-form-19 #edit-submit--3, #fb-conteneur #webform-client-form-19 #edit-submit{
+	margin: 0 15px 0 0; 
+}
+.fb-adresse{
+	padding:15px 16px 0 0;
+	margin-left: 193px;
+}
+
+#fb-accueil-content .fb-adresse{
+	padding:15px 16px 0 0;
+	margin-left: 0px;
+} 
+
+#fb-accueil-content .fb-adresse p{
+	padding:15px 16px 0 0;
+	margin-left: 0px;
+	text-align:left;
+} 
+
+.fb-adresse p{
+	text-align:center;
+	color:#686768;
+	font-style:italic;
+	font-weight:bold;
+	font-size:12px;
+}
+#fb-toutesoffres{
+	padding:10px 0 0 50px;
+}
+#fb-toutesoffres p a{
+	margin-top: 10px;
+	display: block;
+	background-image: url("http://www.loireetcharme.com/sites/all/themes/loireetcharme/images/fb-back-allnosbiens-off.png");
+	background-repeat: no-repeat;
+	color:transparent;
+	text-indent:-9999px;
+	min-height:30px;
+}
+#fb-toutesoffres p a:hover{
+	background-image: url("http://www.loireetcharme.com/sites/all/themes/loireetcharme/images/fb-back-allnosbiens-on.png");
+}
+
+#fb-nobiens-header{
+	font-weight:bold;
+	padding:0 20px 10px 20px;
+}
+#fb-nobiens-header p{color:#563e35;}
+
+/******************************************************************************************/
+#fb-loading{
+	
+	position:absolute;
+	width:100%;
+	height:100%;
+	background-color:#ddd;
+	/*opacity:0.5;*/
+	z-index:300;
+}
+
+#fb-form-contact{
+	/*display:none;*/
+	position: absolute;
+	width:780px;
+	/*background-color:#FFFFFF;*/
+	
+}
+
+#fb-form-contact .fb-adresse {
+	margin-left: 0px;
+}
+#fb-nosbiens{
+	/*display:none;*/
+	position: absolute;
+	width:780px;
+	padding-left: 4px;
+	padding-right: 5px;
+	/*background-color:#FFFFFF;*/
+	/*background-image: url(../images/fond_FB_LoireCharme.jpg);*/
+}
+
+#fb-conteneur .bien-row-content{
+	/*width: 182px;*/
+	width: 425px;
+}
+#fb-conteneur .bien-row-image{
+	width: 260px;
+}
+#fb-conteneur .bien-row-content-header-prix{
+	float: right;
+	color: #593d32;
+	font-weight: bold;
+	font-size: 13px;
+	margin: 10px 280px 0 0;
+}
+#fb-conteneur .bien-row-content-header-ref{
+	background-image: url(http://www.loireetcharme.com/sites/all/themes/loireetcharme/images/bien-ref-left.png);
+	background-repeat: no-repeat;
+	padding:0 0 0 7px;
+	margin:5px 5px 0  0;
+}
+
+#fb-conteneur .bien-row-content-header-ref .field-content{
+	/*height:25px;*/
+	color:#fff;	
+	background-image: url(http://www.loireetcharme.com/sites/all/themes/loireetcharme/images/bien-ref-right.png);
+	background-repeat: no-repeat;
+	background-position: top right;
+	height:30px;
+	padding: 5px 10px 0 4px;
+	font-size:13px;
+}
+.fb-fanpage{
+	clear:left;
+	padding:0 0 0 13px;
+	width: 780px;
+}
+.fb-fanpage img{
+	display:block;
+	padding:10px 0 0 0;
+	margin-left: 270px;
+}
+/* FIN FACEBOOK PAGE */
+
+
+.galleria-thumb-nav-right{
+	background-image: url("../images/classic-map.png");
+}
+.galleria-thumb-nav-left{
+	background-image: url("../images/classic-map.png");
+}
+.notouch .galleria-thumb-nav-left:hover,
+.notouch .galleria-thumb-nav-right:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    background-color: transparent;
+}
+
+
+#powered {
+    background: url("http://www.loireetcharme.com/sites/all/themes/loireetcharme/images/powered.png") no-repeat scroll 0 0 transparent;
+    float: right;
+	height: 80px;
+   margin-right: 20px;
+    margin-top: 14px;
+    width: 165px;
+}
+
+a#powered:hover {
+    background: url("http://www.loireetcharme.com/sites/all/themes/loireetcharme/images/powered.png") no-repeat scroll 0px -98px transparent;
+    float: right;
+	height: 80px;
+   margin-right: 20px;
+    margin-top: 14px;
+    width: 165px;
+}
+/*
+a:link {
+    color: #D8CAB9;
+    text-decoration: none;
+}*/
+
+.hide-text {
+    overflow: hidden;
+    text-indent: 103%;
+    white-space: nowrap;
+}
+
+/*
+Jérôme add style 
+4 Avril 2012
+*/
+
+/*
+ * Galleria Classic Theme
+ * Copyright (c) 2010, Aino
+ * Licensed under the MIT license.
+ */
+ 
+.galleria-container {
+    position: relative;
+    overflow: hidden;
+    background: white;
+}
+
+.galleria-container img {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+	max-width: none !important;
+}
+.galleria-stage {
+    position: absolute;
+    top: 10px;
+    bottom: 60px;
+    left: 10px;
+    right: 10px;
+    overflow:hidden;
+}
+.galleria-thumbnails-container {
+    height: 50px;
+    bottom: 0;
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    z-index: 2;
+}
+.galleria-carousel .galleria-thumbnails-list {
+    margin-left: 28px;
+    margin-right: 28px;
+}
+.galleria-thumbnails .galleria-image {
+	/*
+	height: 40px;
+    width: 60px;
+	*/
+	height: 35px;
+    width: 52px;
+    background: white;
+    margin: 0 5px 0 0;
+    border: 1px solid #000;
+    float: left;
+    cursor: pointer;
+}
+.galleria-counter {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    text-align: right;
+    color: #fff;
+    font: normal 11px/1 arial,sans-serif;
+    z-index: 1;
+}
+.galleria-loader {
+    background: #000;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+    display: none;
+    background: url(../images/classic-loader.gif) no-repeat 2px 2px;
+}
+.galleria-info {
+    width: 50%;
+    top: 15px;
+    left: 15px;
+    z-index: 2;
+    position: absolute;
+}
+.galleria-info-text {
+    background-color: #000;
+    padding: 12px;
+    display: none;
+    /* IE7 */ zoom:1;
+}
+.galleria-info-title {
+    font: bold 12px/1.1 arial,sans-serif;
+    margin: 0;
+    color: #fff;
+	margin-bottom: 7px;
+}
+.galleria-info-description {
+    font: italic 12px/1.4 georgia,serif;
+    margin: 0;
+    color: #bbb;
+}
+.galleria-info-close {
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-position: -753px -11px;
+    opacity: .5;
+    filter: alpha(opacity=50);
+    cursor: pointer;
+    display: none;
+}
+.notouch .galleria-info-close:hover{
+    opacity:1;
+    filter: alpha(opacity=100);
+}
+.touch .galleria-info-close:active{
+    opacity:1;
+    filter: alpha(opacity=100);
+}
+.galleria-info-link {
+    background-position: -669px -5px;
+    opacity: .7;
+    filter: alpha(opacity=70);
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background-color: #000;
+}
+.notouch .galleria-info-link:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.touch .galleria-info-link:active {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.galleria-image-nav {
+    position: absolute;
+    top: 50%;
+    margin-top: -62px;
+    width: 100%;
+    height: 62px;
+    left: 0;
+}
+.galleria-image-nav-left,
+.galleria-image-nav-right {
+    opacity: .3;
+    filter: alpha(opacity=30);
+    cursor: pointer;
+    width: 62px;
+    height: 124px;
+    position: absolute;
+    left: 10px;
+    z-index: 2;
+    background-position: 0 46px;
+}
+.galleria-image-nav-right {
+    left: auto;
+    right: 10px;
+    background-position: -254px 46px;
+    z-index: 2;
+}
+.notouch .galleria-image-nav-left:hover,
+.notouch .galleria-image-nav-right:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.touch .galleria-image-nav-left:active,
+.touch .galleria-image-nav-right:active {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.galleria-thumb-nav-left,
+.galleria-thumb-nav-right {
+    cursor: pointer;
+    display: none;
+    background-position: -495px 5px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 40px;
+    width: 23px;
+    z-index: 3;
+    opacity: .8;
+    filter: alpha(opacity=80);
+}
+.galleria-thumb-nav-right {
+    background-position: -578px 5px;
+    border-right: none;
+    right: 0;
+    left: auto;
+}
+.galleria-thumbnails-container .disabled {
+    opacity: .2;
+    filter: alpha(opacity=20);
+    cursor: default;
+}
+.notouch .galleria-thumb-nav-left:hover,
+.notouch .galleria-thumb-nav-right:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    background-color: #111;
+}
+.touch .galleria-thumb-nav-left:active,
+.touch .galleria-thumb-nav-right:active {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    background-color: #111;
+}
+.notouch .galleria-thumbnails-container .disabled:hover {
+    opacity: .2;
+    filter: alpha(opacity=20);
+    background-color: transparent;
+}
+
+.galleria-carousel .galleria-thumb-nav-left,
+.galleria-carousel .galleria-thumb-nav-right {
+    display: block;
+}
+.galleria-thumb-nav-left,
+.galleria-thumb-nav-right,
+.galleria-info-link,
+.galleria-info-close,
+.galleria-image-nav-left,
+.galleria-image-nav-right {
+    background-image: url(../images/classic-map.png);
+    background-repeat: no-repeat;
+}
+

@@ -1,0 +1,15 @@
+; $Id: 
+name = Webform ajax page Form Builder support
+description = Add form builder support for webform ajax page.
+core = 7.x
+package = Webform
+
+dependencies[] = webform
+dependencies[] = form_builder_webform
+dependencies[] = webform_ajax_page
+; Information added by drupal.org packaging script on 2011-10-28
+version = "7.x-1.0"
+core = "7.x"
+project = "webform_ajax_page"
+datestamp = "1319813737"
+
